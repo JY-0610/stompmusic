@@ -1,0 +1,2239 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="Content-Script-Type" content="text/javascript" />
+	<meta http-equiv="Content-Style-Type" content="text/css" />
+	<meta content="IE=edge, chrome=1" http-equiv="X-UA-Compatible" />
+	<meta name ="viewport" content= "width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+	<!-- 네이버 웹마스터 도구 -->
+	<meta name="naver-site-verification" content="e31922f054b0c812c52c36b1daeadfb4eda8462b" />
+
+	<!-- seo -->
+	<meta name="Keywords" content="스톰프뮤직,스톰프">
+	<meta name="Description" content="트렌디한 라이프 스타일에 맞춘 공연문화예술 콘텐츠 스마트 클래식">
+
+	<meta property="og:image" content="http://stompmusic.com/images/main-top-logo.png" />
+	<meta property="og:title" content="스톰프뮤직" />
+	<meta property="og:description" content="트렌디한 라이프 스타일에 맞춘 공연문화예술 콘텐츠 스마트 클래식" />
+	<meta property="og:type" content="website" />
+	<meta property="og:site_name" content="스톰프뮤직" />
+	<link rel="canonical" href="http://stompmusic.com/">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+	<link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
+	<link rel="icon" href="/images/favicon.ico" type="image/x-icon" />
+	<!--end-->
+
+
+
+		<title>스톰프뮤직 &#8211; 최고의 연주음악 전문 레이블 </title>
+
+		<link href="/common/css/jquery.fullPage.css" rel="stylesheet">
+		<link href="/common/css/base.css" rel="stylesheet">
+		<link href="/common/css/board.css" rel="stylesheet">
+		<link href="/common/css/swiper.min.css" rel="stylesheet">
+		<link href="/common/css/common.css" rel="stylesheet">
+		<link href="/common/css/animate.min.css" rel="stylesheet">
+		<link href="/common/css/aos.css" rel="stylesheet">
+		<script src="/common/js/jquery-3.3.1.min.js"></script>
+		<script src="/common/js/common.js"></script>
+		<script src="/common/js/aos.js"></script>
+		<script src="/common/js/swiper.min.js"></script>
+		<script type="text/javascript" src="/common/js/fullpage.js"></script>
+
+
+	</head>
+	<body>
+		<div class="wrap ko">
+	<div class="award-mark">
+		<img src="/images/awd_mark2.png" alt="WEB AWARD 20 WINNER">
+	</div>
+	<div id="header" class="header">
+		<div class="header">
+				<div class="topbar">
+					<a href="https://smartstore.naver.com/stompmusic" class="top-quick draw" target="_blank">STORE</a>
+					<h1>
+						<a href="/" class="main-logo">
+							<img src="/images/main-top-logo.png">
+						</a>
+					</h1>
+					<ul class="topbar-menu">
+						<li class="lang-link"><a href="/language.php?lang=ko">KOR</a></li>
+						<li class="lang-link en"><a href="/language.php?lang=en">ENG</a></li>
+						<li class="search">
+							<a href="#" class="search-btn"><img src="/images/search-icon.png"></a>
+							<div class="dim-layer search-popup">
+								<div class="pop-layer search">
+									<form name="frmsearch1" action="/bbs/search.php" onsubmit="return search_submit(this);"> <!-- /bbs/index.php?=concert_bbs G5_SHOP_URL -->
+										<aside id="hd_sch" style="display: block;">
+											<div class="sch_inner">
+												<input type="hidden" name="category" value="all">
+												<input type="hidden" name="findType" value="all">
+												<input type="text" name="findWord" id="findWord" required="" class="frm_input" placeholder="Search">
+												<input type="submit" value="" class="btn_submit">
+												<button type="button" class="btn-layerClose"></button>
+											</div>
+										</aside>
+									</form>
+								</div>
+							</div>
+							<!--newsletter modal-->
+						</li>
+						<li>
+							<input type="checkbox" id="menu-toggle" tabIndex="-1" />
+							<label class="menu-toggle" for="menu-toggle" onClick="onMU();" >
+							  <span class="line line-1"></span>
+							  <span class="line line-2"></span>
+							  <span class="line line-3"></span>
+							  <span class="line line-4"></span>
+							</label>
+							<label class="overlay" for="menu-toggle"></label>
+						</li>
+					</ul>
+				</div>
+				<!--topbar-->
+				 <div class="full-menu ctxtWrap" data-mcs-theme="dark">
+					<ul>
+						<li>
+							<a href="/stomp/about.php">STOMPMUSIC</a>
+							<ul class="full-submenu">
+								<li><a href="/stomp/about.php">스톰프뮤직 소개</a></li>
+								<li><a href="/stomp/history.php">연혁</a></li>
+								<li><a href="/stomp/contact.php">오시는 길</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="/bbs/?so_table=concert_bbs">CONCERT</a>
+							<ul class="full-submenu">
+															<li><a href="/bbs/?so_table=concert_bbs&category=2022">2022</a></li>
+															<li><a href="/bbs/?so_table=concert_bbs&category=2021">2021</a></li>
+															<li><a href="/bbs/?so_table=concert_bbs&category=2020">2020</a></li>
+															<li><a href="/bbs/?so_table=concert_bbs&category=2019">2019</a></li>
+															<li><a href="/bbs/?so_table=concert_bbs&category=2018">2018</a></li>
+															<li><a href="/bbs/?so_table=concert_bbs&category=2017">2017</a></li>
+															<li><a href="/bbs/?so_table=concert_bbs&category=2016">2016</a></li>
+															<li><a href="/bbs/?so_table=concert_bbs&category=2015">2015</a></li>
+															<li><a href="/bbs/?so_table=concert_bbs&category=2015이전">2015이전</a></li>
+														</ul>
+						</li>
+						<li>
+							<a href="/bbs/?so_table=artist_domestic">ARTIST</a>
+							<ul class="full-submenu">
+								<li><a href="/bbs/?so_table=artist_domestic">국내</a></li>
+								<li><a href="/bbs/?so_table=artist_overseas">해외</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="/bbs/?so_table=album">ALBUM</a>
+							<ul class="full-submenu">
+															<li><a href="/bbs/?so_table=album&category=BEST">BEST</a></li>
+															<li><a href="/bbs/?so_table=album&category=2022">2022</a></li>
+															<li><a href="/bbs/?so_table=album&category=2021">2021</a></li>
+															<li><a href="/bbs/?so_table=album&category=2020">2020</a></li>
+															<li><a href="/bbs/?so_table=album&category=2019">2019</a></li>
+															<li><a href="/bbs/?so_table=album&category=2018">2018</a></li>
+															<li><a href="/bbs/?so_table=album&category=2017">2017</a></li>
+															<li><a href="/bbs/?so_table=album&category=2016">2016</a></li>
+															<li><a href="/bbs/?so_table=album&category=2015">2015</a></li>
+															<li><a href="/bbs/?so_table=album&category=2015 이전">2015 이전</a></li>
+														</ul>
+						</li>
+						<li>
+							<a href="/bbs/?so_table=notice">NEWS</a>
+							<ul class="full-submenu">
+								<li><a href="/bbs/?so_table=notice">공지사항</a></li>
+								<li><a href="/bbs/?so_table=press">언론보도</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="/bbs/?so_table=sns_insta">SNS</a>
+							<ul class="full-submenu">
+								<li><a href="/bbs/?so_table=sns_insta">Instagram</a></li>
+								<li><a href="/bbs/?so_table=sns_youtb">YouTube</a></li>
+								<li><a href="/bbs/?so_table=sns_facebook">Facebook</a></li>
+								<li><a href="/bbs/?so_table=sns_blog">Blog</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="/bbs/?so_table=business1">BUSINESS</a>
+							<ul class="full-submenu">
+								<li><a href="/bbs/?so_table=business1">외부공연장</a></li>
+								<li><a href="/bbs/?so_table=business2">VIP 행사대행</a></li>
+							</ul>
+						</li>
+					</ul>
+					<div class="fullmenu-sns">
+						<p>스톰프뮤직 공식채널</p>
+						<ul>
+							<li>
+								<a href="https://www.instagram.com/stompclassic/" target="_blank"><img src="/images/sns_insta.png" alt="스톰프뮤직 인스타그램"></a>
+							</li>
+							<li>
+								<a href="https://www.youtube.com/user/StompMusic" target="_blank"><img src="/images/sns_youtb.png" alt="스톰프뮤직 유투브"></a>
+							</li>
+							<li>
+								<a href="https://www.facebook.com/STOMPCLASSIC/" target="_blank"><img src="/images/sns_facebook.png" alt="스톰프뮤직 페이스북"></a>
+							</li>
+							<li>
+								<a href="https://blog.naver.com/stomp442" target="_blank"><img src="/images/sns_blog.png" alt="스톰프뮤직 블로그"></a>
+							</li>
+						</ul>
+					</div>
+				 </div>
+				 <!--fullmenu-->
+
+				<nav class="nav-bar">
+					<div class="nav-bg"><span></span></div>
+					<ul class="depth1">
+						<li class="plus">
+							<a href="/stomp/about.php">STOMPMUSIC</a>
+							<div class="sub-menu">
+								<div class="depth-intro">
+									<div class="l-txt">
+										<strong class="tit">STOMPMUSIC</strong>
+										<p class="des">스톰프뮤직 소개</p>
+									</div>
+									<div class="r-bg" style="background-image:url('/images/depthbg_1.jpg')"></div>
+									<ul class="depth2">
+										<li><a href="/stomp/about.php">스톰프뮤직 소개</a></li>
+										<li><a href="/stomp/history.php">연혁</a></li>
+										<li><a href="/stomp/contact.php">오시는 길</a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<!--STOMP MUSIC-->
+						<li class="plus">
+							<a href="/bbs/?so_table=concert_bbs&category=2022">CONCERT</a>
+							<div class="sub-menu">
+								<div class="depth-intro">
+									<div class="l-txt">
+										<strong class="tit">CONCERT</strong>
+										<p class="des">콘서트 소개</p>
+									</div>
+									<div class="r-bg" style="background-image:url('/images/depthbg_2.jpg')"></div>
+									<ul class="depth2 col_3">
+																			<li><a href="/bbs/?so_table=concert_bbs&category=2022">2022</a></li>
+																			<li><a href="/bbs/?so_table=concert_bbs&category=2021">2021</a></li>
+																			<li><a href="/bbs/?so_table=concert_bbs&category=2020">2020</a></li>
+																			<li><a href="/bbs/?so_table=concert_bbs&category=2019">2019</a></li>
+																			<li><a href="/bbs/?so_table=concert_bbs&category=2018">2018</a></li>
+																			<li><a href="/bbs/?so_table=concert_bbs&category=2017">2017</a></li>
+																			<li><a href="/bbs/?so_table=concert_bbs&category=2016">2016</a></li>
+																			<li><a href="/bbs/?so_table=concert_bbs&category=2015">2015</a></li>
+																			<li><a href="/bbs/?so_table=concert_bbs&category=2015이전">2015이전</a></li>
+																		</ul>
+								</div>
+							</div>
+						</li>
+						<!--CONCERT-->
+						<li class="plus"><a href="/bbs/?so_table=artist_domestic">ARTIST</a>
+							<div class="sub-menu">
+								<div class="depth-intro">
+									<div class="l-txt">
+										<strong class="tit">ARTIST</strong>
+										<p class="des">아티스트 소개</p>
+									</div>
+									<div class="r-bg" style="background-image:url('/images/depthbg_3.jpg')"></div>
+
+									<ul class="depth2">
+										<li><a href="/bbs/?so_table=artist_domestic">국내</a></li>
+										<li><a href="/bbs/?so_table=artist_overseas">해외</a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<!--ARTIST-->
+						<li class="plus"><a href="/bbs/?so_table=album&category=BEST">ALBUM</a>
+							<div class="sub-menu">
+								<div class="depth-intro">
+									<div class="l-txt">
+										<strong class="tit">ALBUM</strong>
+										<p class="des">앨범 소개</p>
+									</div>
+									<div class="r-bg" style="background-image:url('/images/depthbg_4.jpg')"></div>
+
+									<ul class="depth2 col_3">
+																			<li><a href="/bbs/?so_table=album&category=BEST">BEST</a></li>
+																			<li><a href="/bbs/?so_table=album&category=2022">2022</a></li>
+																			<li><a href="/bbs/?so_table=album&category=2021">2021</a></li>
+																			<li><a href="/bbs/?so_table=album&category=2020">2020</a></li>
+																			<li><a href="/bbs/?so_table=album&category=2019">2019</a></li>
+																			<li><a href="/bbs/?so_table=album&category=2018">2018</a></li>
+																			<li><a href="/bbs/?so_table=album&category=2017">2017</a></li>
+																			<li><a href="/bbs/?so_table=album&category=2016">2016</a></li>
+																			<li><a href="/bbs/?so_table=album&category=2015">2015</a></li>
+																			<li><a href="/bbs/?so_table=album&category=2015 이전">2015 이전</a></li>
+																		</ul>
+								</div>
+							</div>
+						</li>
+						<!--ALBUM-->
+						<li class="plus"><a href="/bbs/?so_table=notice">NEWS</a>
+							<div class="sub-menu">
+								<div class="depth-intro">
+									<div class="l-txt">
+										<strong class="tit">NEWS</strong>
+										<p class="des">스톰프뮤직 소식</p>
+									</div>
+									<div class="r-bg" style="background-image:url('/images/depthbg_5.jpg')"></div>
+
+									<ul class="depth2">
+										<li><a href="/bbs/?so_table=notice">공지사항</a></li>
+										<li><a href="/bbs/?so_table=press">언론보도</a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<!--NEWS-->
+						<li class="plus"><a href="/bbs/?so_table=sns_insta">SNS</a>
+							<div class="sub-menu">
+								<div class="depth-intro">
+									<div class="l-txt">
+										<strong class="tit">SNS</strong>
+										<p class="des">Social Network</p>
+									</div>
+									<div class="r-bg" style="background-image:url('/images/depthbg_6.jpg')"></div>
+
+									<ul class="depth2">
+										<li><a href="/bbs/?so_table=sns_insta">Instagram</a></li>
+										<li><a href="/bbs/?so_table=sns_facebook">Facebook</a></li>
+										<li><a href="/bbs/?so_table=sns_youtb">YouTube</a></li>
+										<li><a href="/bbs/?so_table=sns_blog">Blog</a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<!--SNS-->
+						<li class="plus"><a href="/bbs/?so_table=business1">BUSINESS</a>
+							<div class="sub-menu">
+								<div class="depth-intro">
+									<div class="l-txt">
+										<strong class="tit">BUSINESS</strong>
+										<p class="des">스톰프뮤직의 사업</p>
+									</div>
+									<div class="r-bg" style="background-image:url('/images/depthbg_7.jpg')"></div>
+									<ul class="depth2">
+										<li><a href="/bbs/?so_table=business1">외부공연장</a></li>
+										<li><a href="/bbs/?so_table=business2">VIP 행사대행</a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<!--Business-->
+					</ul>
+				</nav>
+
+
+		</div>
+		<!--header-->
+	</div>
+
+
+	<script type="text/javascript">
+		// news-letter
+			$('.search-btn').click(function(){
+				$('.search-popup').fadeIn();
+				return false;
+			});
+			$('.btn-layerClose').click(function(){
+				$('.search-popup').fadeOut();
+					return false;
+			});
+	//header fixed
+		$(window).scroll(function(){
+		var height = $(document).scrollTop();
+		if(height > 0){
+		  $('#header, .sub-path ').addClass('fixinner');
+		}else if(height == 0){
+		  $('#header, .sub-path ').removeClass('fixinner');
+		}
+	  });
+	//nav bar
+	  $('.nav-bar > ul > li:first-child').on('mouseover',function(){
+		$('.nav-bar > ul > li:first-child .depth-intro').addClass('open');
+		$('.nav-bar > ul > li:first-child .sub-menu, .nav-bg').addClass('open');
+	  });
+	  $('.nav-bar > ul > li:nth-child(2)').on('mouseover',function(){
+		$('.nav-bar > ul > li:nth-child(2) .depth-intro').addClass('open');
+		$('.nav-bar > ul > li:nth-child(2) .sub-menu, .nav-bg').addClass('open');
+	  });
+	  $('.nav-bar > ul > li:nth-child(3)').on('mouseover',function(){
+		$('.nav-bar > ul > li:nth-child(3) .depth-intro').addClass('open');
+		$('.nav-bar > ul > li:nth-child(3) .sub-menu, .nav-bg').addClass('open');
+	  });
+	  $('.nav-bar > ul > li:nth-child(4)').on('mouseover',function(){
+		$('.nav-bar > ul > li:nth-child(4) .depth-intro').addClass('open');
+		$('.nav-bar > ul > li:nth-child(4) .sub-menu, .nav-bg').addClass('open');
+	  });
+	  $('.nav-bar > ul > li:nth-child(5)').on('mouseover',function(){
+		$('.nav-bar > ul > li:nth-child(5) .depth-intro').addClass('open');
+		$('.nav-bar > ul > li:nth-child(5) .sub-menu, .nav-bg').addClass('open');
+	  });
+	  $('.nav-bar > ul > li:nth-child(6)').on('mouseover',function(){
+		$('.nav-bar > ul > li:nth-child(6) .depth-intro').addClass('open');
+		$('.nav-bar > ul > li:nth-child(6) .sub-menu, .nav-bg').addClass('open');
+	  });
+	  $('.nav-bar > ul > li:nth-child(7)').on('mouseover',function(){
+		$('.nav-bar > ul > li:nth-child(7) .depth-intro').addClass('open');
+		$('.nav-bar > ul > li:nth-child(7) .sub-menu, .nav-bg').addClass('open');
+	  });
+
+	  $('.nav-bar > ul > li').on('mouseleave',function(){
+		$('.sub-menu, .nav-bg, .depth-intro').removeClass('open');
+	  });
+	  $('.menu-toggle').click(function(){
+		$('html,body').toggleClass('ov-hd');
+		$('.lang-link').toggleClass('active');
+	  });
+	//fullmenu active
+		const ico = document.querySelector('#menu-toggle');
+		const fullMenu = document.querySelector('.full-menu');
+
+		ico.addEventListener('click', function() {
+		  this.classList.toggle('is-active');
+		  fullMenu.classList.toggle('is-active');
+		});
+	//fullmenu submenu
+	$(document).ready(function(){
+			if($(window).outerWidth() < 1200) {
+				$('.full-menu > ul > li > a').attr("href", "#");
+				$('.full-menu > ul > li > a').click(function(){
+				$(this).next().slideToggle();
+				$(this).parent().siblings().find('.full-submenu').slideUp();
+				})
+			}
+		});
+	</script>
+	<!-- sec-header -->
+	<!--STOMP MUSIC-->
+ 
+
+
+<!--CONCERT-->
+ 
+
+<!--ARTIST-->
+ 
+
+<!--ALBUM-->
+ 
+
+<!--NEWS-->
+
+
+<!--SNS-->
+
+
+<!--business-->
+
+<!--Audition-->
+
+
+
+<script>
+$(function(){
+
+	$('.path-list .current').click(function () {
+			$(this).parent().toggleClass('open').siblings().removeClass('open');
+			$(this).next().stop().slideToggle(300);
+			$(this).parent().siblings().find('.drdn').slideUp(300);
+	})
+
+})
+		</script>
+<style>
+    /* 팝업레이어 */
+    #hd_pop {z-index:1000;position:relative;margin:0 auto; width:100%; max-width:970px;height:0}
+    #hd_pop h2 {position:absolute;font-size:0;line-height:0;overflow:hidden}
+    .hd_pops {position:absolute;border:1px solid #e9e9e9;background:#fff}
+    .hd_pops_con {}
+    .hd_pops_footer {padding:10px 0;background:#000;color:#fff;text-align:right; overflow:hidden;}
+    .hd_pops_footer button {margin-right:5px;padding:2px 10px;border:0;background:#000; font-size:12px;color:#fff; float:left;}
+    .hd_pops_footer button:last-child{float:right;}
+	img{max-width:100%;}
+	@media screen and (max-width:970px){
+		#hd_pop div.hd_pops{left:0 !important; width:50%;}
+		#hd_pop div.hd_pops:nth-child(2n){left:50% !important;}
+		.hd_pops_con{width:100% !important; height:auto !important;}
+		.hd_pops_con img{width:100%;}
+	}
+	@media screen and (max-width:500px){
+		#hd_pop div.hd_pops{ width:96%; top:10px !important; left:2% !important;}
+		#hd_pop div.hd_pops:nth-child(2n){left:2% !important;} 
+	}
+</style>
+<!-- 팝업레이어 시작 { -->
+<div id="hd_pop">
+    <h2>팝업레이어 알림</h2>
+
+    </div>
+
+<script>
+   $(function() {
+    $(".hd_pops_reject").click(function() {
+        var id = $(this).attr('class').split(' ');
+        var ck_name = id[1];
+        var exp_time = parseInt(id[2]);
+        $("#"+id[1]).css("display", "none");
+        set_cookie(ck_name, 1, exp_time, "");
+    });
+    $('.hd_pops_close').click(function() {
+		//alert("ddd");
+        var idb = $(this).attr('class').split(' ');
+        $('#'+idb[1]).css('display','none');
+    });
+    $("#hd").css("z-index", 1000);
+});
+    // 쿠키 입력
+// 창열기  
+function openWin( winName ) {  
+   var blnCookie    = getCookie( winName );  
+   var obj = eval( "window." + winName );  
+   if( !blnCookie ) {  
+       obj.style.display = "block";  
+   }  
+}  
+  
+// 창닫기  
+function closeWin(winName, expiredays) {   
+   setCookie( winName, "done" , expiredays);   
+   var obj = eval( "window." + winName );  
+   obj.style.display = "none";  
+}  
+function closeWinAt00(winName, expiredays) {   
+   setCookieAt00( winName, "done" , expiredays);   
+   var obj = eval( "window." + winName );  
+   obj.style.display = "none";  
+}  
+  
+function set_cookie(name, value, expirehours, domain)
+{
+	
+    var today = new Date();
+    today.setTime(today.getTime() + (60*60*1000*expirehours));
+    document.cookie = name + "=" + escape( value ) + "; path=/; expires=" + today.toGMTString() + ";";
+    if (domain) {
+        document.cookie += "domain=" + domain + ";";
+    }
+}
+
+// 쿠키 얻음
+function get_cookie(name)
+{
+    var find_sw = false;
+    var start, end;
+    var i = 0;
+
+    for (i=0; i<= document.cookie.length; i++)
+    {
+        start = i;
+        end = start + name.length;
+
+        if(document.cookie.substring(start, end) == name)
+        {
+            find_sw = true
+            break
+        }
+    }
+
+    if (find_sw == true)
+    {
+        start = end + 1;
+        end = document.cookie.indexOf(";", start);
+
+        if(end < start)
+            end = document.cookie.length;
+
+        return unescape(document.cookie.substring(start, end));
+    }
+    return "";
+}
+
+// 쿠키 지움
+function delete_cookie(name)
+{
+    var today = new Date();
+
+    today.setTime(today.getTime() - 1);
+    var value = get_cookie(name);
+    if(value != "")
+        document.cookie = name + "=" + value + "; path=/; expires=" + today.toGMTString();
+}
+
+</script>
+<!-- } 팝업레이어 끝 -->		<div class="bg-line">
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+		<div id="fullpage" class="main">
+			<div class="section section01" data-anchor="section-1st">
+				<div class="sec01-wr">
+					<div class="visual-txt">
+						<div class="visual-tit">
+							<h2 class="loading">
+								<span>S</span>
+								<span>T</span>
+								<span>O</span>
+								<span>M</span>
+								<span>P</span>
+								<span>M</span>
+								<span>U</span>
+								<span>S</span>
+								<span>I</span>
+								<span>C</span>
+							</h2>
+							<p>들을수록 진가가 발휘되는 음악,<br class="pc-block"> 내 삶의 배경음악이 되는 음악을 선사하겠습니다.</p>
+						</div>
+						<ul class="btn-align">
+							<li><a href="/audition/audition.php" class="more-btn2"><span>AUDITION</span></a></li>
+							<li><a href="#" class="layerpop1 line-more-btn">NEWS LETTER</a></li>
+						</ul>
+						<ul class="sns-link">
+							<li>
+								<a href="https://www.instagram.com/stompmusic.classic/" target="_blank">
+									<span class="spin circle insta"></span>
+								</a>
+							</li>
+							<li>
+								<a href="https://www.youtube.com/user/StompMusic" target="_blank">
+									<span class="spin circle youtb">
+									</span>
+								</a>
+							</li>
+							<li>
+								<a href="https://www.facebook.com/STOMPCLASSIC/" target="_blank">
+									<span class="spin circle facebook"></span>
+								</a>
+							</li>
+							<li>
+								<a href="https://blog.naver.com/stomp442" target="_blank">
+									<span  class="spin circle blog"></span>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<!--visual-txt-->
+					<div class="visual-slide">
+						<div class="swiper-container">
+							<div class="swiper-wrapper">
+																<div class="swiper-slide"><img src="/banner/item/80.jpg"></div>
+															</div>
+						</div>
+					</div>
+					<!--visual-slide-->
+				</div>
+			</div>
+			<!--section01-->
+			<div class="section section02" data-anchor="section-2nd">
+				<div class="typing-bg"><p>STOMPMUSIC</p></div>
+				<div class="left-cont">
+					<div class="main-tit">
+						<h2>
+							<span>UPCOMING</span>
+							<span>CONCERT</span>
+						</h2>
+						<p>스톰프뮤직의 콘서트를 안내합니다</p>
+					</div>
+					<!--main-tit-->
+					<div class="btn-align">
+						<a href="/bbs/?so_table=concert_bbs&category=2021" class="more-btn effect"> <span>VIEW MORE</span></a>
+						<div class="swiper-button-prev"></div>
+						<div class="swiper-button-next"></div>
+					</div>
+					<!--btn-align-->
+				</div>
+				<!--left-cont-->
+				<div class="concert-slide">
+					<div class="swiper-container">
+    <div class="swiper-wrapper">
+     
+    	    	<div class="swiper-slide concert-item">
+    		<a href="/bbs/index.php?so_table=concert_bbs&mode=VIEW&num=231&">
+    			<img src="/bbs/data/concert_bbs/ca5ef893_EBA790EBA19CED8E98EC9888ED9484_EBA6ACEC82ACEC9DB4ED8B80_ED8FACEC8AA4ED84B0+ECB59CECA285EC82ACEC9DB4ED8AB8+EC98ACEBA6B4EAB1B0.jpg">
+    			<p class="con-tit">알렉산더 말로페예프 피아...</p>
+    		</a>
+    	</div>
+    	    	<div class="swiper-slide concert-item">
+    		<a href="/bbs/index.php?so_table=concert_bbs&mode=VIEW&num=230&">
+    			<img src="/bbs/data/concert_bbs/35464ac0_5BED8FACEC8AA4ED84B05DEC9CA0EB9FACED94BCEC9588EB9494ECA688EB8B88ECA780EBB88CEBA6AC_ED9988ED8E98EC9DB4ECA780ECA080EC9AA9EB9F89.jpg">
+    			<p class="con-tit">유러피안 재즈 트리오 디즈니 VS 지브리</p>
+    		</a>
+    	</div>
+    	    	<div class="swiper-slide concert-item">
+    		<a href="/bbs/index.php?so_table=concert_bbs&mode=VIEW&num=228&">
+    			<img src="/bbs/data/concert_bbs/81598151_22ED94BCEC9584ECA1B8EB9DBC_ED8FACEC8AA4ED84B0.jpg">
+    			<p class="con-tit">아디오스 피아졸라 라이브탱고</p>
+    		</a>
+    	</div>
+    	    	<div class="swiper-slide concert-item">
+    		<a href="/bbs/index.php?so_table=concert_bbs&mode=VIEW&num=227&">
+    			<img src="/bbs/data/concert_bbs/e4666612_22ED94BCEC9584ECA1B8EB9DBC_ED8FACEC8AA4ED84B0.jpg">
+    			<p class="con-tit">아디오스 피아졸라 라이브탱고</p>
+    		</a>
+    	</div>
+    	    	<div class="swiper-slide concert-item">
+    		<a href="/bbs/index.php?so_table=concert_bbs&mode=VIEW&num=226&">
+    			<img src="/bbs/data/concert_bbs/1723c1f4_5BED8FACEC8AA4ED84B05D-EC87BCED8CBDEAB3BC-ED95A8EABB98-EB96A0EB8298EB8A94-EBA788EC9A94EBA5B4ECB9B4-EAB8B0ED9689_ECA080.jpg">
+    			<p class="con-tit">쇼팽과 함께 떠나는 스페인 마요르카 기행</p>
+    		</a>
+    	</div>
+    	    	<div class="swiper-slide concert-item">
+    		<a href="/bbs/index.php?so_table=concert_bbs&mode=VIEW&num=225&">
+    			<img src="/bbs/data/concert_bbs/22e7e3d6_5BED94BCEC9584EBB094ED9D905D+ED8FACEC8AA4ED84B0.jpg">
+    			<p class="con-tit">피아졸라, 바흐를 만나다</p>
+    		</a>
+    	</div>
+    	    	<div class="swiper-slide concert-item">
+    		<a href="/bbs/index.php?so_table=concert_bbs&mode=VIEW&num=223&">
+    			<img src="/bbs/data/concert_bbs/43699557_5BED8FACEC8AA4ED84B05D+EC95A0EB8B88EBA994EC9DB4EC8598+ECB2BCEBA19C+ED8E98EC8AA4ED8BB0EBB28C.jpg">
+    			<p class="con-tit">애니메이션 첼로 페스티벌: 디즈니 VS 지브리</p>
+    		</a>
+    	</div>
+    	    	<div class="swiper-slide concert-item">
+    		<a href="/bbs/index.php?so_table=concert_bbs&mode=VIEW&num=222&">
+    			<img src="/bbs/data/concert_bbs/d8fe7d3c_5BED8FACEC8AA4ED84B05D+EC8BACED8FACEB8B88EC98A4EBB88CEBA994EC9DB4ED948CEC8AA4ED86A0EBA6AC.jpg">
+    			<p class="con-tit">심포니 오브 메이플스토리</p>
+    		</a>
+    	</div>
+    	    	<div class="swiper-slide concert-item">
+    		<a href="/bbs/index.php?so_table=concert_bbs&mode=VIEW&num=221&">
+    			<img src="editor/upload/img/1642398147.jpg">
+    			<p class="con-tit">프리다 칼로, 자클린 뒤 프레를 만나다</p>
+    		</a>
+    	</div>
+    	    	<div class="swiper-slide concert-item">
+    		<a href="/bbs/index.php?so_table=concert_bbs&mode=VIEW&num=220&">
+    			<img src="editor/upload/img/1642051144.jpg">
+    			<p class="con-tit">박진수 바이올린 독주회 </p>
+    		</a>
+    	</div>
+    	        </div>
+    <div class="swiper-scrollbar" style="display:block;"></div>
+</div>
+<!-- 
+					<div class="swiper-container">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide concert-item">
+								<a href="#">
+									<img src="/images/concert01.jpg">
+									<p class="con-tit">쇼팽으로만나는 지브리 오케스트라</p>
+								</a>
+							</div>
+							<div class="swiper-slide concert-item">
+								<a href="#">
+									<img src="/images/concert02.jpg">
+									<p class="con-tit">콘서트제목이 노출됩니다 콘서트제목이 노출됩니다</p>
+								</a>
+							</div>
+							<div class="swiper-slide concert-item">
+								<a href="#">
+									<img src="/images/concert03.jpg">
+									<p class="con-tit">콘서트제목이 노출됩니다 콘서트제목이 노출됩니다</p>
+								</a>
+							</div>
+							<div class="swiper-slide concert-item">
+								<a href="#">
+									<img src="/images/concert04.jpg">
+									<p class="con-tit">콘서트제목이 노출됩니다 콘서트제목이 노출됩니다</p>
+								</a>
+							</div>
+							<div class="swiper-slide concert-item">
+								<a href="#">
+									<img src="/images/concert05.jpg">
+									<p class="con-tit">콘서트제목이 노출됩니다 콘서트제목이 노출됩니다</p>
+								</a>
+							</div>
+							<div class="swiper-slide concert-item">
+								<a href="#">
+									<img src="/images/concert06.jpg">
+									<p class="con-tit">콘서트제목이 노출됩니다 콘서트제목이 노출됩니다</p>
+								</a>
+							</div>
+							<div class="swiper-slide concert-item">
+								<a href="#">
+									<img src="/images/concert07.jpg">
+									<p class="con-tit">콘서트제목이 노출됩니다 콘서트제목이 노출됩니다</p>
+								</a>
+							</div>
+						</div>
+						<div class="swiper-scrollbar" style="display:block;"></div>
+					</div>
+					 -->				</div>
+			</div>
+
+			<!--section02-->
+			<div class="section section03" data-anchor="section-3rd">
+				<div class="main-tit">
+					<h2 class="animated fadeInUp delay-1s">ALBUM</h2>
+				</div>
+				<ul class="tab-menu">
+
+					<li data-id="cont1" class="on">
+						<span>
+							<img src="/images/tab-ico01.png">
+						</span>
+						<p>Classical</p>
+					</li>
+					<li data-id="cont2">
+						<span>
+							<img src="/images/tab-ico02.png">
+						</span>
+						<p>Jazz</p>
+					</li>
+					<li data-id="cont3">
+						<span>
+							<img src="/images/tab-ico03.png">
+						</span>
+						<p>Newage</p>
+					</li>
+					<li data-id="cont4">
+						<span>
+							<img src="/images/tab-ico04.png">
+						</span>
+						<p>World Music</p>
+					</li>
+					<li data-id="cont5">
+						<span>
+							<img src="/images/tab-ico05.png">
+						</span>
+						<p>POP</p>
+					</li>
+				</ul>
+				<!--tab-menu-->
+				<div class="cont-box on" id="cont1">
+					<div class="album-slide">
+						    <div class="swiper-container">
+    	<div class="swiper-wrapper">
+    	 
+        	    		<div class="swiper-slide">
+    			<div class="cover-img">
+    				<a href="#">
+    					<img src="/bbs/data/album/c907848c_iiiiii.jpg" class="album-img">
+    					<img src="/bbs/data/album/28da8660_EC8690ECA780EC8898.png" class="cd-img">
+    				</a>
+    			</div>
+    			<!--cover-img-->
+    			<div class="cover-cont">
+    				<div class="cover-profile">
+    					<dl>
+    						<dt>아티스트</dt>
+    						<dd>손지수</dd>
+    					</dl>
+    					<dl>
+    						<dt>앨범명</dt>
+    						<dd>청춘시 </dd>
+    					</dl>
+    					<dl>
+    						<dt>발매일</dt>
+    						<dd>2022-03-15</dd>
+    					</dl>
+    					<dl>
+    						<dt>형태</dt>
+    						<dd>싱글</dd>
+    					</dl>
+    				</div>
+    				<!--cover-profile-->
+    				<div class="profile-txt">
+    					<p>소프라노 손지수가 청춘시(時)에 전하는 청춘시(詩)</p>
+    				</div>
+    				<!--profile-txt-->
+    				<a href="/bbs/index.php?so_table=album&mode=VIEW&num=379&" class="more-btn-b">VIEW MORE</a>
+    			</div>
+    			<!--profile-cont-->
+    		</div>
+    		    		<div class="swiper-slide">
+    			<div class="cover-img">
+    				<a href="#">
+    					<img src="/bbs/data/album/964a69a1_28cover29ED998DED989CEB9E802CECB59CEC9B90ED9C98-EBB384EC9D98EB85B8EB9E98.jpg" class="album-img">
+    					<img src="/bbs/data/album/34f403d6_EBB384EC9D98EB85B8EB9E98.png" class="cd-img">
+    				</a>
+    			</div>
+    			<!--cover-img-->
+    			<div class="cover-cont">
+    				<div class="cover-profile">
+    					<dl>
+    						<dt>아티스트</dt>
+    						<dd>홍혜란, 최원휘</dd>
+    					</dl>
+    					<dl>
+    						<dt>앨범명</dt>
+    						<dd>별의 노래</dd>
+    					</dl>
+    					<dl>
+    						<dt>발매일</dt>
+    						<dd>2021-09-08</dd>
+    					</dl>
+    					<dl>
+    						<dt>형태</dt>
+    						<dd>싱글</dd>
+    					</dl>
+    				</div>
+    				<!--cover-profile-->
+    				<div class="profile-txt">
+    					<p>소프라노 홍혜란, 테너 최원휘가 들려주는 가을밤의 자장가</p>
+    				</div>
+    				<!--profile-txt-->
+    				<a href="/bbs/index.php?so_table=album&mode=VIEW&num=354&" class="more-btn-b">VIEW MORE</a>
+    			</div>
+    			<!--profile-cont-->
+    		</div>
+    		    		<div class="swiper-slide">
+    			<div class="cover-img">
+    				<a href="#">
+    					<img src="/bbs/data/album/e6009233_28cover29ED998DED989CEB9E802C+ECB59CEC9B90ED9C98+-+The+Promise.jpg" class="album-img">
+    					<img src="/bbs/data/album/d6555aff_thepromise.png" class="cd-img">
+    				</a>
+    			</div>
+    			<!--cover-img-->
+    			<div class="cover-cont">
+    				<div class="cover-profile">
+    					<dl>
+    						<dt>아티스트</dt>
+    						<dd>홍혜란, 최원휘</dd>
+    					</dl>
+    					<dl>
+    						<dt>앨범명</dt>
+    						<dd>The Promise</dd>
+    					</dl>
+    					<dl>
+    						<dt>발매일</dt>
+    						<dd>2021-04-23</dd>
+    					</dl>
+    					<dl>
+    						<dt>형태</dt>
+    						<dd>정규</dd>
+    					</dl>
+    				</div>
+    				<!--cover-profile-->
+    				<div class="profile-txt">
+    					<p>소프라노 홍혜란, 테너 최원휘. 정상급 부부 성악가의 찬양 앨범 [The Promise]</p>
+    				</div>
+    				<!--profile-txt-->
+    				<a href="/bbs/index.php?so_table=album&mode=VIEW&num=341&" class="more-btn-b">VIEW MORE</a>
+    			</div>
+    			<!--profile-cont-->
+    		</div>
+    		    		<div class="swiper-slide">
+    			<div class="cover-img">
+    				<a href="#">
+    					<img src="/bbs/data/album/2b545c6a_28cover29EC8BA0ECB0BDEC9AA9+-+GASPARD+de+la+NUIT.jpg" class="album-img">
+    					<img src="/bbs/data/album/a3fa8015_shin.png" class="cd-img">
+    				</a>
+    			</div>
+    			<!--cover-img-->
+    			<div class="cover-cont">
+    				<div class="cover-profile">
+    					<dl>
+    						<dt>아티스트</dt>
+    						<dd>신창용(Changyong Shin)</dd>
+    					</dl>
+    					<dl>
+    						<dt>앨범명</dt>
+    						<dd>GASPARD de la NUIT</dd>
+    					</dl>
+    					<dl>
+    						<dt>발매일</dt>
+    						<dd>2020-11-20</dd>
+    					</dl>
+    					<dl>
+    						<dt>형태</dt>
+    						<dd>정규</dd>
+    					</dl>
+    				</div>
+    				<!--cover-profile-->
+    				<div class="profile-txt">
+    					<p>‘지나 바카우어 국제 아티스트 콩쿠르 한국인 최초 우승자’ 젊은 거장 신창용의 국내 첫 공식 앨범</p>
+    				</div>
+    				<!--profile-txt-->
+    				<a href="/bbs/index.php?so_table=album&mode=VIEW&num=188&" class="more-btn-b">VIEW MORE</a>
+    			</div>
+    			<!--profile-cont-->
+    		</div>
+    		    		<div class="swiper-slide">
+    			<div class="cover-img">
+    				<a href="#">
+    					<img src="/bbs/data/album/d604fd63_ED9DACEBA79DEAB080.jpg" class="album-img">
+    					<img src="/bbs/data/album/89dcacd8_ED9DACEBA79DEAB080.png" class="cd-img">
+    				</a>
+    			</div>
+    			<!--cover-img-->
+    			<div class="cover-cont">
+    				<div class="cover-profile">
+    					<dl>
+    						<dt>아티스트</dt>
+    						<dd>홍혜란(Haeran Hong)</dd>
+    					</dl>
+    					<dl>
+    						<dt>앨범명</dt>
+    						<dd>희망가</dd>
+    					</dl>
+    					<dl>
+    						<dt>발매일</dt>
+    						<dd>2020-01-10</dd>
+    					</dl>
+    					<dl>
+    						<dt>형태</dt>
+    						<dd>정규</dd>
+    					</dl>
+    				</div>
+    				<!--cover-profile-->
+    				<div class="profile-txt">
+    					<p>메트로폴리탄 오페라 극장을 주도한 소프라노 “홍혜란” 12개의 한국 대표가곡들이 수록된 홍혜란의 국내 첫 정규앨범 발매!</p>
+    				</div>
+    				<!--profile-txt-->
+    				<a href="/bbs/index.php?so_table=album&mode=VIEW&num=228&" class="more-btn-b">VIEW MORE</a>
+    			</div>
+    			<!--profile-cont-->
+    		</div>
+    		            	</div>
+    	<div class="swiper-button-prev"></div>
+    	<div class="swiper-button-next"></div>
+    </div>
+					</div>
+				</div>
+				<!--cont1 정통 클래식-->
+				<div class="cont-box" id="cont2">
+					<div class="album-slide">
+						    <div class="swiper-container">
+    	<div class="swiper-wrapper">
+    	 
+        	    		<div class="swiper-slide">
+    			<div class="cover-img">
+    				<a href="#">
+    					<img src="/bbs/data/album/4113689b_28cover29ED91B8EB94A928Pudding29+-+If+I+Could+Meet+Again+5BRemastered+Deluxe+Edition5D.jpg" class="album-img">
+    					<img src="/bbs/data/album/dc371c8f_pudding.png" class="cd-img">
+    				</a>
+    			</div>
+    			<!--cover-img-->
+    			<div class="cover-cont">
+    				<div class="cover-profile">
+    					<dl>
+    						<dt>아티스트</dt>
+    						<dd>푸딩(Pudding)</dd>
+    					</dl>
+    					<dl>
+    						<dt>앨범명</dt>
+    						<dd>If I Could Meet Again [Remastered Deluxe Edition]</dd>
+    					</dl>
+    					<dl>
+    						<dt>발매일</dt>
+    						<dd>2021-09-14</dd>
+    					</dl>
+    					<dl>
+    						<dt>형태</dt>
+    						<dd>스페셜</dd>
+    					</dl>
+    				</div>
+    				<!--cover-profile-->
+    				<div class="profile-txt">
+    					<p>팝 재즈 밴드 '푸딩'의 명반 [If I Could Meet Again], 확장판으로 돌아오다</p>
+    				</div>
+    				<!--profile-txt-->
+    				<a href="/bbs/index.php?so_table=album&mode=VIEW&num=356&" class="more-btn-b">VIEW MORE</a>
+    			</div>
+    			<!--profile-cont-->
+    		</div>
+    		    		<div class="swiper-slide">
+    			<div class="cover-img">
+    				<a href="#">
+    					<img src="/bbs/data/album/974653df_28Cover29ED91B8EB9494ED86A0EBA6ACEC9B80+-+EBA98BECA784ED9598EBA3A8+OST+Deluxe+Edition.jpg" class="album-img">
+    					<img src="/bbs/data/album/62c7bf82_EBA98BECA784ED9598EBA3A8.png" class="cd-img">
+    				</a>
+    			</div>
+    			<!--cover-img-->
+    			<div class="cover-cont">
+    				<div class="cover-profile">
+    					<dl>
+    						<dt>아티스트</dt>
+    						<dd>﻿김정범(Pudditorium)</dd>
+    					</dl>
+    					<dl>
+    						<dt>앨범명</dt>
+    						<dd>멋진하루 OST Deluxe Edition (2CD)</dd>
+    					</dl>
+    					<dl>
+    						<dt>발매일</dt>
+    						<dd>2021-04-29</dd>
+    					</dl>
+    					<dl>
+    						<dt>형태</dt>
+    						<dd>스페셜</dd>
+    					</dl>
+    				</div>
+    				<!--cover-profile-->
+    				<div class="profile-txt">
+    					<p>확장판으로 돌아온 영화음악계의 거장 김정범의 명반 [멋진하루 OST Deluxe Edition]</p>
+    				</div>
+    				<!--profile-txt-->
+    				<a href="/bbs/index.php?so_table=album&mode=VIEW&num=342&" class="more-btn-b">VIEW MORE</a>
+    			</div>
+    			<!--profile-cont-->
+    		</div>
+    		    		<div class="swiper-slide">
+    			<div class="cover-img">
+    				<a href="#">
+    					<img src="/bbs/data/album/6784509c_299719.jpg" class="album-img">
+    					<img src="/bbs/data/album/0a7cb872_ddd.png" class="cd-img">
+    				</a>
+    			</div>
+    			<!--cover-img-->
+    			<div class="cover-cont">
+    				<div class="cover-profile">
+    					<dl>
+    						<dt>아티스트</dt>
+    						<dd>푸디토리움(Pudditorium)</dd>
+    					</dl>
+    					<dl>
+    						<dt>앨범명</dt>
+    						<dd>Episode 재회(再會)</dd>
+    					</dl>
+    					<dl>
+    						<dt>발매일</dt>
+    						<dd>2011-09-20</dd>
+    					</dl>
+    					<dl>
+    						<dt>형태</dt>
+    						<dd>정규</dd>
+    					</dl>
+    				</div>
+    				<!--cover-profile-->
+    				<div class="profile-txt">
+    					<p>푸디토리움. '이별· 재회· 인연'. 사랑의 세가지 단상, 그 두 번째 이야기. Pudditorium [Episode 재회(再會)].</p>
+    				</div>
+    				<!--profile-txt-->
+    				<a href="/bbs/index.php?so_table=album&mode=VIEW&num=225&" class="more-btn-b">VIEW MORE</a>
+    			</div>
+    			<!--profile-cont-->
+    		</div>
+    		    		<div class="swiper-slide">
+    			<div class="cover-img">
+    				<a href="#">
+    					<img src="/bbs/data/album/f2a38723_183241.jpg" class="album-img">
+    					<img src="/bbs/data/album/bc8cc306_pu.png" class="cd-img">
+    				</a>
+    			</div>
+    			<!--cover-img-->
+    			<div class="cover-cont">
+    				<div class="cover-profile">
+    					<dl>
+    						<dt>아티스트</dt>
+    						<dd>푸디토리움(Pudditorium)</dd>
+    					</dl>
+    					<dl>
+    						<dt>앨범명</dt>
+    						<dd>Episode: 이별</dd>
+    					</dl>
+    					<dl>
+    						<dt>발매일</dt>
+    						<dd>2009-05-04</dd>
+    					</dl>
+    					<dl>
+    						<dt>형태</dt>
+    						<dd>정규</dd>
+    					</dl>
+    				</div>
+    				<!--cover-profile-->
+    				<div class="profile-txt">
+    					<p>팝재즈밴드 푸딩의 리더 김정범! 솔로 프로젝트 푸디토리움(Pudditorium) 정규앨범 발매 [Episode : 이별]</p>
+    				</div>
+    				<!--profile-txt-->
+    				<a href="/bbs/index.php?so_table=album&mode=VIEW&num=224&" class="more-btn-b">VIEW MORE</a>
+    			</div>
+    			<!--profile-cont-->
+    		</div>
+    		    		<div class="swiper-slide">
+    			<div class="cover-img">
+    				<a href="#">
+    					<img src="/bbs/data/album/c09240ab_358359.jpg" class="album-img">
+    					<img src="/bbs/data/album/0682d5e9_new.png" class="cd-img">
+    				</a>
+    			</div>
+    			<!--cover-img-->
+    			<div class="cover-cont">
+    				<div class="cover-profile">
+    					<dl>
+    						<dt>아티스트</dt>
+    						<dd>푸디토리움(Pudditorium)</dd>
+    					</dl>
+    					<dl>
+    						<dt>앨범명</dt>
+    						<dd>New Sound Set (Live)</dd>
+    					</dl>
+    					<dl>
+    						<dt>발매일</dt>
+    						<dd>2013-02-19</dd>
+    					</dl>
+    					<dl>
+    						<dt>형태</dt>
+    						<dd>라이브</dd>
+    					</dl>
+    				</div>
+    				<!--cover-profile-->
+    				<div class="profile-txt">
+    					<p>푸디토리움 라이브 실황 앨범 [New Sound Set]</p>
+    				</div>
+    				<!--profile-txt-->
+    				<a href="/bbs/index.php?so_table=album&mode=VIEW&num=222&" class="more-btn-b">VIEW MORE</a>
+    			</div>
+    			<!--profile-cont-->
+    		</div>
+    		            	</div>
+    	<div class="swiper-button-prev"></div>
+    	<div class="swiper-button-next"></div>
+    </div>
+					</div>
+				</div>
+				<!--cont2 재즈-->
+				<div class="cont-box" id="cont3">
+					<div class="album-slide">
+						    <div class="swiper-container">
+    	<div class="swiper-wrapper">
+    	 
+        	    		<div class="swiper-slide">
+    			<div class="cover-img">
+    				<a href="#">
+    					<img src="/bbs/data/album/05f944a3_28cover29EC9CA4ED959C+-++Renaissance+-10th+Anniversary+Edition.jpg" class="album-img">
+    					<img src="/bbs/data/album/a9e99bb4_EBA5B4EB84A4EC8381EC8AA4.png" class="cd-img">
+    				</a>
+    			</div>
+    			<!--cover-img-->
+    			<div class="cover-cont">
+    				<div class="cover-profile">
+    					<dl>
+    						<dt>아티스트</dt>
+    						<dd>윤한(Yoonhan)</dd>
+    					</dl>
+    					<dl>
+    						<dt>앨범명</dt>
+    						<dd>Renaissance - 10th Anniversary Edition</dd>
+    					</dl>
+    					<dl>
+    						<dt>발매일</dt>
+    						<dd>2021-02-10</dd>
+    					</dl>
+    					<dl>
+    						<dt>형태</dt>
+    						<dd>베스트</dd>
+    					</dl>
+    				</div>
+    				<!--cover-profile-->
+    				<div class="profile-txt">
+    					<p>윤한의 모든 것을 담아낸  데뷔 10주년 기념 베스트 앨범</p>
+    				</div>
+    				<!--profile-txt-->
+    				<a href="/bbs/index.php?so_table=album&mode=VIEW&num=315&" class="more-btn-b">VIEW MORE</a>
+    			</div>
+    			<!--profile-cont-->
+    		</div>
+    		    		<div class="swiper-slide">
+    			<div class="cover-img">
+    				<a href="#">
+    					<img src="/bbs/data/album/5be47a00_743515.jpg" class="album-img">
+    					<img src="/bbs/data/album/279a64b5_yh.png" class="cd-img">
+    				</a>
+    			</div>
+    			<!--cover-img-->
+    			<div class="cover-cont">
+    				<div class="cover-profile">
+    					<dl>
+    						<dt>아티스트</dt>
+    						<dd>윤한(Yoonhan)</dd>
+    					</dl>
+    					<dl>
+    						<dt>앨범명</dt>
+    						<dd>지극히 사적인</dd>
+    					</dl>
+    					<dl>
+    						<dt>발매일</dt>
+    						<dd>2018-05-18</dd>
+    					</dl>
+    					<dl>
+    						<dt>형태</dt>
+    						<dd>정규</dd>
+    					</dl>
+    				</div>
+    				<!--cover-profile-->
+    				<div class="profile-txt">
+    					<p>피아니스트 윤한, 건반의 선율로 표현한 감정의 집약체 첫 피아노 소품집 [지극히 사적인]</p>
+    				</div>
+    				<!--profile-txt-->
+    				<a href="/bbs/index.php?so_table=album&mode=VIEW&num=226&" class="more-btn-b">VIEW MORE</a>
+    			</div>
+    			<!--profile-cont-->
+    		</div>
+    		    		<div class="swiper-slide">
+    			<div class="cover-img">
+    				<a href="#">
+    					<img src="/bbs/data/album/9b5ecd4a_1.jpg" class="album-img">
+    					<img src="/bbs/data/album/59d0b76f_sasa.png" class="cd-img">
+    				</a>
+    			</div>
+    			<!--cover-img-->
+    			<div class="cover-cont">
+    				<div class="cover-profile">
+    					<dl>
+    						<dt>아티스트</dt>
+    						<dd>이사오 사사키(Isao Sasaki)</dd>
+    					</dl>
+    					<dl>
+    						<dt>앨범명</dt>
+    						<dd>Missing You</dd>
+    					</dl>
+    					<dl>
+    						<dt>발매일</dt>
+    						<dd>1999-12-01</dd>
+    					</dl>
+    					<dl>
+    						<dt>형태</dt>
+    						<dd>정규</dd>
+    					</dl>
+    				</div>
+    				<!--cover-profile-->
+    				<div class="profile-txt">
+    					<p>수록곡 리스트01&nbsp;Kesaran Pasaran03&nbsp;Out Of Daybreak05&nbsp;Princess Of Flowers07&nbsp;Over The Rainbow (MBC 내 이름은 김삼순중 현빈 피아노연주 원곡)Jo-Jo앨범 설명&nbsp;</p>
+    				</div>
+    				<!--profile-txt-->
+    				<a href="/bbs/index.php?so_table=album&mode=VIEW&num=218&" class="more-btn-b">VIEW MORE</a>
+    			</div>
+    			<!--profile-cont-->
+    		</div>
+    		    		<div class="swiper-slide">
+    			<div class="cover-img">
+    				<a href="#">
+    					<img src="/bbs/data/album/88fee7cd_the+very+best+new.jpg" class="album-img">
+    					<img src="/bbs/data/album/e7312b2e_EBB2A0EC8AA4ECB8A0.png" class="cd-img">
+    				</a>
+    			</div>
+    			<!--cover-img-->
+    			<div class="cover-cont">
+    				<div class="cover-profile">
+    					<dl>
+    						<dt>아티스트</dt>
+    						<dd>이루마(Yiruma)</dd>
+    					</dl>
+    					<dl>
+    						<dt>앨범명</dt>
+    						<dd>The Very Best Of Yiruma: Yiruma & Piano</dd>
+    					</dl>
+    					<dl>
+    						<dt>발매일</dt>
+    						<dd>2011-11-30</dd>
+    					</dl>
+    					<dl>
+    						<dt>형태</dt>
+    						<dd>베스트</dd>
+    					</dl>
+    				</div>
+    				<!--cover-profile-->
+    				<div class="profile-txt">
+    					<p>이루마 최초의 베스트 앨범 YIRUMA & PIANO</p>
+    				</div>
+    				<!--profile-txt-->
+    				<a href="/bbs/index.php?so_table=album&mode=VIEW&num=195&" class="more-btn-b">VIEW MORE</a>
+    			</div>
+    			<!--profile-cont-->
+    		</div>
+    		    		<div class="swiper-slide">
+    			<div class="cover-img">
+    				<a href="#">
+    					<img src="/bbs/data/album/a4c41ca2_first+love+cover.jpg" class="album-img">
+    					<img src="/bbs/data/album/dc7b6d3d_ED8DBCEC8AA4ED8AB8.png" class="cd-img">
+    				</a>
+    			</div>
+    			<!--cover-img-->
+    			<div class="cover-cont">
+    				<div class="cover-profile">
+    					<dl>
+    						<dt>아티스트</dt>
+    						<dd>이루마(Yiruma) </dd>
+    					</dl>
+    					<dl>
+    						<dt>앨범명</dt>
+    						<dd>First Love [Repackage]</dd>
+    					</dl>
+    					<dl>
+    						<dt>발매일</dt>
+    						<dd>2005-05-19</dd>
+    					</dl>
+    					<dl>
+    						<dt>형태</dt>
+    						<dd>정규</dd>
+    					</dl>
+    				</div>
+    				<!--cover-profile-->
+    				<div class="profile-txt">
+    					<p>한국을 대표하는 뉴에이지 아티스트 이루마 그의 대표작 「First Love」리패키지판</p>
+    				</div>
+    				<!--profile-txt-->
+    				<a href="/bbs/index.php?so_table=album&mode=VIEW&num=194&" class="more-btn-b">VIEW MORE</a>
+    			</div>
+    			<!--profile-cont-->
+    		</div>
+    		            	</div>
+    	<div class="swiper-button-prev"></div>
+    	<div class="swiper-button-next"></div>
+    </div>
+					</div>
+				</div>
+				<!--cont3 뉴에이지-->
+				<div class="cont-box" id="cont4">
+					<div class="album-slide">
+						    <div class="swiper-container">
+    	<div class="swiper-wrapper">
+    	 
+        	    		<div class="swiper-slide">
+    			<div class="cover-img">
+    				<a href="#">
+    					<img src="/bbs/data/album/b28f3ef8_8020592.jpg" class="album-img">
+    					<img src="/bbs/data/album/fdd73988_na.png" class="cd-img">
+    				</a>
+    			</div>
+    			<!--cover-img-->
+    			<div class="cover-cont">
+    				<div class="cover-profile">
+    					<dl>
+    						<dt>아티스트</dt>
+    						<dd>Naomi & Goro(나오미 앤 고로)</dd>
+    					</dl>
+    					<dl>
+    						<dt>앨범명</dt>
+    						<dd>Home</dd>
+    					</dl>
+    					<dl>
+    						<dt>발매일</dt>
+    						<dd>2006-08-01</dd>
+    					</dl>
+    					<dl>
+    						<dt>형태</dt>
+    						<dd>정규</dd>
+    					</dl>
+    				</div>
+    				<!--cover-profile-->
+    				<div class="profile-txt">
+    					<p>일본 최고의 보사노바 듀오 감성의 보컬 나오미 후세 & 브라질리언 기타의 1인자 이토 고로 의 심플한 어쿠스틱 하모니!</p>
+    				</div>
+    				<!--profile-txt-->
+    				<a href="/bbs/index.php?so_table=album&mode=VIEW&num=217&" class="more-btn-b">VIEW MORE</a>
+    			</div>
+    			<!--profile-cont-->
+    		</div>
+    		    		<div class="swiper-slide">
+    			<div class="cover-img">
+    				<a href="#">
+    					<img src="/bbs/data/album/768137ab_mori.png" class="album-img">
+    					<img src="" class="cd-img">
+    				</a>
+    			</div>
+    			<!--cover-img-->
+    			<div class="cover-cont">
+    				<div class="cover-profile">
+    					<dl>
+    						<dt>아티스트</dt>
+    						<dd>HASHIGEYO(하시게요)</dd>
+    					</dl>
+    					<dl>
+    						<dt>앨범명</dt>
+    						<dd>MORI</dd>
+    					</dl>
+    					<dl>
+    						<dt>발매일</dt>
+    						<dd>2021-11-18</dd>
+    					</dl>
+    					<dl>
+    						<dt>형태</dt>
+    						<dd>정규</dd>
+    					</dl>
+    				</div>
+    				<!--cover-profile-->
+    				<div class="profile-txt">
+    					<p>&nbsp;앨범 설명HASHIGEYO(하시게요)는 김벙글, 김싱글, 놋싱글 세 명의 아티스트를 주축으로 다양한 프로젝트를 선보여 왔다. 프로젝트 별로 멤버 구성이 바뀌는 하시게요는 Co-ArtWork-Project Team을 지향한다. 이번에 공개되는 ‘MORI’는 정규 1집 앨범 [Originally]과 2집 [SEA SO...</p>
+    				</div>
+    				<!--profile-txt-->
+    				<a href="/bbs/index.php?so_table=album&mode=VIEW&num=364&" class="more-btn-b">VIEW MORE</a>
+    			</div>
+    			<!--profile-cont-->
+    		</div>
+    		    		<div class="swiper-slide">
+    			<div class="cover-img">
+    				<a href="#">
+    					<img src="/bbs/data/album/10af9579_1.jpg" class="album-img">
+    					<img src="/bbs/data/album/1c1aabd0_ECA484EBA6ACEC97A3.png" class="cd-img">
+    				</a>
+    			</div>
+    			<!--cover-img-->
+    			<div class="cover-cont">
+    				<div class="cover-profile">
+    					<dl>
+    						<dt>아티스트</dt>
+    						<dd>Juliet Lyons</dd>
+    					</dl>
+    					<dl>
+    						<dt>앨범명</dt>
+    						<dd>The Light Within: 요가,힐링,내면의 평화를 위한 명상음악</dd>
+    					</dl>
+    					<dl>
+    						<dt>발매일</dt>
+    						<dd>2019-10-10</dd>
+    					</dl>
+    					<dl>
+    						<dt>형태</dt>
+    						<dd>정규</dd>
+    					</dl>
+    				</div>
+    				<!--cover-profile-->
+    				<div class="profile-txt">
+    					<p>편안하고 따뜻한 치유의 목소리 소유자 Juliet Lyons 힐링 명상음악</p>
+    				</div>
+    				<!--profile-txt-->
+    				<a href="/bbs/index.php?so_table=album&mode=VIEW&num=60&" class="more-btn-b">VIEW MORE</a>
+    			</div>
+    			<!--profile-cont-->
+    		</div>
+    		    		<div class="swiper-slide">
+    			<div class="cover-img">
+    				<a href="#">
+    					<img src="/bbs/data/album/1b1e3b89_1.jpg" class="album-img">
+    					<img src="/bbs/data/album/253e638a_ED83B1ECA780.png" class="cd-img">
+    				</a>
+    			</div>
+    			<!--cover-img-->
+    			<div class="cover-cont">
+    				<div class="cover-profile">
+    					<dl>
+    						<dt>아티스트</dt>
+    						<dd>CUATROCIENTOS(쿠아트로시엔토스)</dd>
+    					</dl>
+    					<dl>
+    						<dt>앨범명</dt>
+    						<dd>탱고로 만나는 지브리 (라이브 실황)</dd>
+    					</dl>
+    					<dl>
+    						<dt>발매일</dt>
+    						<dd>2019-10-07</dd>
+    					</dl>
+    					<dl>
+    						<dt>형태</dt>
+    						<dd>정규</dd>
+    					</dl>
+    				</div>
+    				<!--cover-profile-->
+    				<div class="profile-txt">
+    					<p>탱고 밴드 '쿠아트로시엔토스 CUATROCIENTOS'의 지브리 OST 연주 앨범</p>
+    				</div>
+    				<!--profile-txt-->
+    				<a href="/bbs/index.php?so_table=album&mode=VIEW&num=55&" class="more-btn-b">VIEW MORE</a>
+    			</div>
+    			<!--profile-cont-->
+    		</div>
+    		    		<div class="swiper-slide">
+    			<div class="cover-img">
+    				<a href="#">
+    					<img src="/bbs/data/album/b365b499_1.jpg" class="album-img">
+    					<img src="/bbs/data/album/d5b04ecc_EC9798ED83B1EAB3A0.png" class="cd-img">
+    				</a>
+    			</div>
+    			<!--cover-img-->
+    			<div class="cover-cont">
+    				<div class="cover-profile">
+    					<dl>
+    						<dt>아티스트</dt>
+    						<dd>Antonio Yoo</dd>
+    					</dl>
+    					<dl>
+    						<dt>앨범명</dt>
+    						<dd>El Tango</dd>
+    					</dl>
+    					<dl>
+    						<dt>발매일</dt>
+    						<dd>2019-08-14</dd>
+    					</dl>
+    					<dl>
+    						<dt>형태</dt>
+    						<dd>정규</dd>
+    					</dl>
+    				</div>
+    				<!--cover-profile-->
+    				<div class="profile-txt">
+    					<p> </p>
+    				</div>
+    				<!--profile-txt-->
+    				<a href="/bbs/index.php?so_table=album&mode=VIEW&num=51&" class="more-btn-b">VIEW MORE</a>
+    			</div>
+    			<!--profile-cont-->
+    		</div>
+    		            	</div>
+    	<div class="swiper-button-prev"></div>
+    	<div class="swiper-button-next"></div>
+    </div>
+					</div>
+				</div>
+				<!--cont4 보사노바-->
+				<div class="cont-box" id="cont5">
+					<div class="album-slide">
+						    <div class="swiper-container">
+    	<div class="swiper-wrapper">
+    	 
+        	    		<div class="swiper-slide">
+    			<div class="cover-img">
+    				<a href="#">
+    					<img src="/bbs/data/album/eedff635_624831.jpg" class="album-img">
+    					<img src="/bbs/data/album/8ef42882_fine.png" class="cd-img">
+    				</a>
+    			</div>
+    			<!--cover-img-->
+    			<div class="cover-cont">
+    				<div class="cover-profile">
+    					<dl>
+    						<dt>아티스트</dt>
+    						<dd>적재(Jukjae)</dd>
+    					</dl>
+    					<dl>
+    						<dt>앨범명</dt>
+    						<dd>FINE</dd>
+    					</dl>
+    					<dl>
+    						<dt>발매일</dt>
+    						<dd>2017-03-09</dd>
+    					</dl>
+    					<dl>
+    						<dt>형태</dt>
+    						<dd>EP</dd>
+    					</dl>
+    				</div>
+    				<!--cover-profile-->
+    				<div class="profile-txt">
+    					<p>“지나간 시간들도, 다친 마음도. 결국 다 괜찮아질 거야.“</p>
+    				</div>
+    				<!--profile-txt-->
+    				<a href="/bbs/index.php?so_table=album&mode=VIEW&num=200&" class="more-btn-b">VIEW MORE</a>
+    			</div>
+    			<!--profile-cont-->
+    		</div>
+    		    		<div class="swiper-slide">
+    			<div class="cover-img">
+    				<a href="#">
+    					<img src="/bbs/data/album/9d71296f_462052.jpg" class="album-img">
+    					<img src="/bbs/data/album/ca9f3319_ED959CEBA788EB9494.png" class="cd-img">
+    				</a>
+    			</div>
+    			<!--cover-img-->
+    			<div class="cover-cont">
+    				<div class="cover-profile">
+    					<dl>
+    						<dt>아티스트</dt>
+    						<dd>적재(Jukjae)</dd>
+    					</dl>
+    					<dl>
+    						<dt>앨범명</dt>
+    						<dd>한마디</dd>
+    					</dl>
+    					<dl>
+    						<dt>발매일</dt>
+    						<dd>2014-11-10</dd>
+    					</dl>
+    					<dl>
+    						<dt>형태</dt>
+    						<dd>정규</dd>
+    					</dl>
+    				</div>
+    				<!--cover-profile-->
+    				<div class="profile-txt">
+    					<p>작사, 작곡, 편곡, 프로듀싱, 그리고 목소리와 기타까지 모두 해내는 실력파 싱어송라이터 적재의 정규 1집</p>
+    				</div>
+    				<!--profile-txt-->
+    				<a href="/bbs/index.php?so_table=album&mode=VIEW&num=197&" class="more-btn-b">VIEW MORE</a>
+    			</div>
+    			<!--profile-cont-->
+    		</div>
+    		    		<div class="swiper-slide">
+    			<div class="cover-img">
+    				<a href="#">
+    					<img src="/bbs/data/album/ef701617_ddddd.jpg" class="album-img">
+    					<img src="/bbs/data/album/a0db8bba_EB8298EC9DB4ED8AB8ED81ACEBA3A8ECA795.png" class="cd-img">
+    				</a>
+    			</div>
+    			<!--cover-img-->
+    			<div class="cover-cont">
+    				<div class="cover-profile">
+    					<dl>
+    						<dt>아티스트</dt>
+    						<dd>김정범(Pudditorium)</dd>
+    					</dl>
+    					<dl>
+    						<dt>앨범명</dt>
+    						<dd>나이트 크루징 OST</dd>
+    					</dl>
+    					<dl>
+    						<dt>발매일</dt>
+    						<dd>2021-12-17</dd>
+    					</dl>
+    					<dl>
+    						<dt>형태</dt>
+    						<dd>스페셜</dd>
+    					</dl>
+    				</div>
+    				<!--cover-profile-->
+    				<div class="profile-txt">
+    					<p>일렉트로닉 팝 음악 스타일과 활기차고 짜릿한 레트로 감성의 [나이트 크루징 OST]</p>
+    				</div>
+    				<!--profile-txt-->
+    				<a href="/bbs/index.php?so_table=album&mode=VIEW&num=368&" class="more-btn-b">VIEW MORE</a>
+    			</div>
+    			<!--profile-cont-->
+    		</div>
+    		    		<div class="swiper-slide">
+    			<div class="cover-img">
+    				<a href="#">
+    					<img src="/bbs/data/album/ad2fd6eb_896502.jpg" class="album-img">
+    					<img src="/bbs/data/album/303498f3_yoonhan.png" class="cd-img">
+    				</a>
+    			</div>
+    			<!--cover-img-->
+    			<div class="cover-cont">
+    				<div class="cover-profile">
+    					<dl>
+    						<dt>아티스트</dt>
+    						<dd>윤한(Yoonhan)</dd>
+    					</dl>
+    					<dl>
+    						<dt>앨범명</dt>
+    						<dd>European Fantasy</dd>
+    					</dl>
+    					<dl>
+    						<dt>발매일</dt>
+    						<dd>2019-06-21</dd>
+    					</dl>
+    					<dl>
+    						<dt>형태</dt>
+    						<dd>정규</dd>
+    					</dl>
+    				</div>
+    				<!--cover-profile-->
+    				<div class="profile-txt">
+    					<p>유럽의 낭만을 오선지에 담아내다. ‘윤한’ 정규 5집 [European Fantasy]</p>
+    				</div>
+    				<!--profile-txt-->
+    				<a href="/bbs/index.php?so_table=album&mode=VIEW&num=227&" class="more-btn-b">VIEW MORE</a>
+    			</div>
+    			<!--profile-cont-->
+    		</div>
+    		    		<div class="swiper-slide">
+    			<div class="cover-img">
+    				<a href="#">
+    					<img src="/bbs/data/album/c4df8575_164701.jpg" class="album-img">
+    					<img src="/bbs/data/album/c524946a_aw.png" class="cd-img">
+    				</a>
+    			</div>
+    			<!--cover-img-->
+    			<div class="cover-cont">
+    				<div class="cover-profile">
+    					<dl>
+    						<dt>아티스트</dt>
+    						<dd>푸디토리움(Pudditorium)</dd>
+    					</dl>
+    					<dl>
+    						<dt>앨범명</dt>
+    						<dd>멋진하루 OST</dd>
+    					</dl>
+    					<dl>
+    						<dt>발매일</dt>
+    						<dd>2008-09-30</dd>
+    					</dl>
+    					<dl>
+    						<dt>형태</dt>
+    						<dd>OST</dd>
+    					</dl>
+    				</div>
+    				<!--cover-profile-->
+    				<div class="profile-txt">
+    					<p>음악으로 만나는 옛 연인과의 재회, 그 하루간의 여정「멋진 하루」 OST  발매</p>
+    				</div>
+    				<!--profile-txt-->
+    				<a href="/bbs/index.php?so_table=album&mode=VIEW&num=223&" class="more-btn-b">VIEW MORE</a>
+    			</div>
+    			<!--profile-cont-->
+    		</div>
+    		            	</div>
+    	<div class="swiper-button-prev"></div>
+    	<div class="swiper-button-next"></div>
+    </div>
+					</div>
+				</div>
+				<!--cont5 대중음악-->
+			</div>
+			<!--section03-->
+			<div class="section section04" data-anchor="section-4th">
+				<div class="main-tit">
+					<h2>
+						SOCIAL NETWORKS
+					</h2>
+					<p>스톰프뮤직과 소통하세요</p>
+				</div>
+				<!--main-tit-->
+				<div class="sns-slide">
+					<div class="swiper-container">
+						<div class="swiper-wrapper">
+                             
+	        <div class="swiper-slide sns-list">
+            <div class="mark blog">
+            	<span></span>
+            	<p>BLOG</p>
+            </div>
+            <a href="https://blog.naver.com/stomp442/222720564930" target='_blank'>
+            	<div class="list-cont">
+            		<h4>[콘텐츠]기획자 추천 시리즈 [이대로 놓치기 아까운 음악...</h4>
+            		<p>*상단 링크를 클릭하시면, 해당 게시물로 이동합니다.&nbsp;&nbsp;</p>
+            	</div>
+            	<div class="thum-img" style="background-image:url('/bbs/data/sns_blog/18bc5744_279882361_3254852561412418_2189924348507612001_n.jpg');"></div>	
+            </a>
+        </div>
+	<!-- 
+<div class="swiper-slide sns-list">
+    <div class="mark blog">
+    	<span></span>
+    	<p>BLOG</p>
+    </div>
+    <a href="#">
+    	<div class="list-cont">
+    		<h4>쇼팽으로 만나는 지브리오케스트라</h4>
+    		<p>
+    			다가오는 9월 12일, 클래식계의 라이징스타 '피아니스트 정한빈'과 함께 쇼팽으로 만나는 지브리
+    		</p>
+    	</div>
+    	<div class="thum-img" style="background-image:url('/images/sns-img01.jpg');"></div>	
+    </a>
+</div>
+-->							 
+	        <div class="swiper-slide sns-list">
+            <div class="mark insta">
+            	<span></span>
+            	<p>INSTAGRAM</p>
+            </div>
+            <a href="https://www.instagram.com/p/Cdw2TlZpFWa/" target='_blank'>
+            	<div class="list-cont">
+            		<h4>[아틀리에 콘서트]&lt;아틀리에 아티스트-바이올리니스트...</h4>
+            		<p>*상단 링크를 클릭하시면, 해당 게시물로 이동합니다.&nbsp;&nbsp;</p>
+            	</div>
+            	<div class="thum-img" style="background-image:url('/bbs/data/sns_insta/c84b54cb_EC9584ED8B80EBA6ACEC9790.JPG');"></div>	
+            </a>
+        </div>
+	<!-- 
+<div class="swiper-slide sns-list">
+	<div class="mark insta">
+		<span></span>
+		<p>INSTAGRAM</p>
+	</div>
+	<a href="#">
+		<div class="list-cont">
+			<h4>Jason Tonioli - Relaxing Piano</h4>		
+			<p>
+				수억회의 스트리밍을 기록하며 전 세계에서 사랑받고 있는 피아니스트 제이슨 토니올리(Jason Tonioli - Relaxing Piano)
+			</p>
+		</div>
+		<div class="thum-img" style="background-image:url('/images/sns-img02.jpg');"></div>
+	</a>
+</div>
+ -->							 
+	        <div class="swiper-slide sns-list">
+            <div class="mark youtb">
+            	<span></span>
+            	<p>YOUTUBE</p>
+            </div>
+            <a href="https://www.youtube.com/watch?v=BhCdYsrp31k" target='_blank'>
+            	<div class="list-cont">
+            		<h4>잔잔하고 아련한 동양풍 뉴에이지 | 제이밍(Jayming) - 달만...</h4>
+            		<p>첫 만남부터 사랑, 그리움, 그리고 이별까지.작곡가 제이밍이 음악으로 그려낸 조선의 사랑과 이...</p>
+            	</div>
+            	<div class="thum-img" style="background-image:url('/bbs/data/sns_youtb/ff3d6595_E1848CE185A6E18486E185A9E186A8E1848BE185B3E186AF+E1848BE185B5E186B8E18485E185A7E186A8E18492E185A1E18489E185A6E1848BE185AD.jpg');"></div>	
+            </a>
+        </div>
+	<!-- 
+<div class="swiper-slide sns-list">
+	<div class="mark youtb">
+		<span></span>
+		<p>YOUTUBE</p>
+	</div>
+	<a href="#">
+		<div class="list-cont">
+			<h4>홍혜란 - 희망가 SONG OF HOPE</h4>
+			<p>
+				퀸 엘리자베스 콩쿠르 아시아 최초 우승 수상자 소프라노 홍혜란의 첫 앨범 [희망가]
+			</p>
+		</div>
+		<div class="thum-img" style="background-image:url('/images/sns-img03.jpg');"></div>
+	</a>
+</div>
+ -->							 
+	        <div class="swiper-slide sns-list">
+            <div class="mark faceb">
+            	<span></span>
+            	<p>FACEBOOK</p>
+            </div>
+            <a href="https://fb.watch/cYhRUPMmJR/" target='_blank'>
+            	<div class="list-cont">
+            		<h4>[음원유통]스원(Swon)의 첫 싱글 [마음] 발매!</h4>
+            		<p>*상단 링크를 클릭하시면, 해당 게시물로 이동합니다.&nbsp;&nbsp;</p>
+            	</div>
+            	<div class="thum-img" style="background-image:url('/bbs/data/sns_facebook/71635f54_EC8AA4EC9B90.JPG');"></div>	
+            </a>
+        </div>
+	<!-- 
+<div class="swiper-slide sns-list">
+	<div class="mark youtb">
+		<span></span>
+		<p>YOUTUBE</p>
+	</div>
+	<a href="#">
+		<div class="list-cont">
+			<h4>홍혜란 - 희망가 SONG OF HOPE</h4>
+			<p>
+				퀸 엘리자베스 콩쿠르 아시아 최초 우승 수상자 소프라노 홍혜란의 첫 앨범 [희망가]
+			</p>
+		</div>
+		<div class="thum-img" style="background-image:url('/images/sns-img03.jpg');"></div>
+	</a>
+</div>
+ -->						</div>
+					</div>
+					<div class="swiper-pagination"></div>
+				</div>
+				<!--sns-slide-->
+			</div>
+			<!--section04-->
+			<!-- footer started -->
+			
+<div class="section footer fp-auto-height" data-anchor="footer">
+		<footer class="inner">
+			<h1 class="foot-logo"><img src="/images/foot-logo.png"></h1>
+				<div class="f-in">
+					<nav class="f-nav">
+						<ul>
+							<li>
+								<a href="/stomp/about.php">회사소개</a>
+							</li>
+							<li>
+								<a href="/bbs/?so_table=notice">공지사항</a>
+							</li>
+							<li>
+								<a href="/sub/privacy.php">개인정보처리방침</a>
+							</li>
+						</ul>
+					</nav>
+					<ul class="f-contact">
+						<li>(주) 스톰프뮤직</li>
+						<li>사업자등록번호 : 843-81-00051</li>
+						<li>대표 : 김정현</li>
+						<li>서울 강남구 봉은사로74길 6 스톰프뮤직빌딩 5층</li>
+						<li>TEL : 02-2658-3546 </li>
+						<li>E-MAIL : info@stompmusic.com</li>
+					</ul>
+					<p class="copy">2015 © <span>STOMP MUSIC.</span> All rights reserved.</p>
+				</div>
+				<ul class="f-sns sns-link">
+						<li class="awd-mark"><img src="/images/awd_mark.png" alt="WEB AWARD 20 WINNER"></li>
+						<li>
+							<a href="https://www.instagram.com/stompmusic.classic/" target="_blank">
+								<span>
+									<img src="/images/sns_insta.png" alt="스톰프뮤직 인스타그램">
+								</span>
+							</a>
+						</li>
+						<li>
+							<a href="https://www.youtube.com/user/StompMusic" target="_blank">
+								<span>
+									<img src="/images/sns_youtb.png" alt="스톰프뮤직 유투브">
+								</span>
+							</a>
+						</li>
+						<li>
+							<a href="https://www.facebook.com/STOMPCLASSIC/" target="_blank">
+								<span>
+									<img src="/images/sns_facebook.png" alt="스톰프뮤직 페이스북">
+								</span>
+							</a>
+						</li>
+						<li>
+							<a href="https://blog.naver.com/stomp442" target="_blank">
+								<span>
+									<img src="/images/sns_blog.png" alt="스톰프뮤직 블로그">
+								</span>
+							</a>
+						</li>
+					</ul>
+					<span itemscope="" itemtype="http://schema.org/Organization">
+					<link itemprop="url" href="http://stompmusic.com/">
+					<a itemprop="sameAs" href="https://www.facebook.com/STOMPCLASSIC/"></a>
+					<a itemprop="sameAs" href="https://blog.naver.com/stomp442"></a>
+					<a itemprop="sameAs" href="https://www.youtube.com/channel/UCEhxA_aRk5gPi7PbzvmkSlg"></a>
+					<a itemprop="sameAs" href="https://tv.naver.com/stompmusic"></a>
+					<a itemprop="sameAs" href="https://www.instagram.com/stompmusic.classic/ "></a>
+					<a itemprop="sameAs" href="https://post.naver.com/my.naver?memberNo=7410720"></a>
+					</span>
+		</footer>
+</div>
+
+	<div class="dim-layer layer1-popup">
+			<div class="dimBg"></div>
+			<div id="" class="pop-layer">
+				<div class="pop-container">
+					<div class="pop-conts">
+						<div class="popupTitle">
+							<h3>STOMP NEWSLETTER</h3>
+							<p>
+								스톰프뮤직의 아티스트 소식과 특별한 혜택이 있는<br class="pc-block">
+								공연과 소식을 먼저 받아보실수 있습니다.
+							</p>
+						</div>
+						<div class="ctxtWrap">
+							<form name="fwrite" id="fwrite" action="newsletter_update.php" onsubmit="return fwrite_submit(this);" method="post" enctype="multipart/form-data" autocomplete=""><input type="hidden" name="" value="">
+								<div class="form-box">
+									<dl>
+										<dt>이름<span class="essential">*</span></dt>
+										<dd>
+											<input type="text" name="nl_name" id="nl_name" class="form_input1">
+										</dd>
+									</dl>
+									<dl>
+										<dt>연락처<span class="essential">*</span></dt>
+										<dd>
+											<input type="text" name="nl_phone" id="nl_phone" class="form_input1">
+										</dd>
+									</dl>
+									<dl>
+										<dt>이메일<span class="essential">*</span></dt>
+										<dd>
+											<input type="text" name="nl_email" id="nl_email" class="form_input1">
+										</dd>
+									</dl>
+								</div>
+								<div class="btn-align-center">
+									<button class="send-btn" type="submit">SEND</button>
+									<a href="#" class="btn-layerClose">CLOSE</a>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>  
+			<script>
+				//AOS Effect
+				AOS.init();  // AOS initiation
+				$('.aos-init').removeClass('aos-animate'); // remove ALL classes which triggers animation in document
+
+			</script>
+
+	</body>
+</html>
+		</div>
+		<!--main-->
+		<div class="dim-layer layer1-popup">
+			<div class="dimBg"></div>
+			<div id="" class="pop-layer">
+				<div class="pop-container">
+					<div class="pop-conts">
+						<div class="popupTitle">
+							<h3>STOMP NEWSLETTER</h3>
+							<p>스톰프뮤직의 아티스트 소식과 특별한 혜택이 있는<br class="pc-block">공연과 소식을 먼저 받아보실수 있습니다.</p>
+						</div>
+						<div class="ctxtWrap" data-mcs-theme="dark">
+							<form name="fwrite" id="fwrit" action="newsletter_update.php" onsubmit="return fwrite_submit(this);" method="post" enctype="multipart/form-data" autocomplete="">
+								<input type="hidden" id="g-recaptcha" name="g-recaptcha">
+								<div class="form-box">
+									<dl>
+										<dt>이름<span class="essential">*</span></dt>
+										<dd>
+											<input type="text" name="nl_name" id="nl_name" class="form_input1" maxlength="40">
+										</dd>
+									</dl>
+									<dl>
+										<dt>이메일<span class="essential">*</span></dt>
+										<dd>
+											<input type="text" name="nl_email" id="nl_email" class="form_input1" maxlength="255">
+										</dd>
+									</dl>
+								</div>
+								<div class="terms-wr">
+							<div class="terms-cont">
+								<strong>회원정보보호 및 대책</strong>
+								<dl>
+									<dt>1. 개인 정보 수집 목적 및 이용</dt>
+									<dd>
+										<p>
+											“스톰프뮤직”은 이용자들의 개인정보보호를 매우 중요시하며, 이용자가 회사의 서비스를 이용함과 동시에 온라인상에서 회사에 제공한 개인정보가 보호 받을 수 있도록 최선을 다하고 있습니다.
+										</p>
+										<p>
+											이에 회사는 통신비밀보호법, 전기통신사업법, 정보통신망 이용촉진 및 정보보호 등에 관한 법률 등 정보통신서비스제공자가 준수하여야 할 관련 법규상의 개인정보보호 규정 및 정보통신부가 제정한 개인정보보호지침을 준수하고 있습니다. “스톰프뮤직”은 개인정보 취급방침을 통하여 이용자들이 제공하는 개인정보가 어떠한 용도와 방식으로 이용되고 있으며 개인정보보호를 위해 어떠한 조치가 취해지고 있는지 알려 드립니다.
+										</p>
+										<p>
+											“스톰프뮤직”은 개인정보 취급방침을 홈페이지 첫 화면에 공개함으로써 이용자들이 언제나 용이하게 보실 수 있도록 조치하고 있습니다.
+										</p>
+										<p>
+											“스톰프뮤직”의 개인정보 취급방침은 정부의 법률 및 지침 변경이나 회사의 내부 방침 변경 등으로 인하여 수시로 변경될 수 있고, 이에 따른 개인정보 취급방침의 지속적인 개선을 위하여 필요한 절차를 정하고 있습니다. 그리고 개인정보 취급방침을 개정하는 경우나 개인정보 취급방침 변경될 경우 쇼핑몰의 첫 페이지의 개인정보취급방침을 통해 고지하고 있습니다. 이용자들께서는 사이트 방문 시, 수시로 확인하시기 바랍니다.
+										</p>
+									</dd>
+									<dd>
+										<p>“스톰프뮤직”의 개인정보 취급방침은 다음과 같은 내용을 담고 있습니다.</p>
+										1. 개인정보 수집에 대한 동의<br />
+										2. 개인정보의 수집목적 및 이용목적<br />
+										3. 수집하는 개인정보 항목 및 수집방법<br />
+										4. 수집하는 개인정보의 보유 및 이용기간<br />
+										5. 수집한 개인정보의 공유 및 제공<br />
+										6. 이용자 자신의 개인정보 관리(열람, 정정, 삭제 등)에 관한 사항<br />
+										7. 쿠키(cookie)의 운영에 관한 사항<br />
+										8. 비회원 고객의 개인정보 관리<br />
+										9. 개인정보의 위탁처리<br />
+										10. 개인정보관련 의견수렴 및 불만처리에 관한 사항<br />
+										11. 개인정보 관리책임자 및 담당자의 소속-성명 및 연락처<br />
+										12. 고지의 의무<br />
+									</dd>
+								</dl>
+								<dl>
+									<dt>1. 개인정보 수집에 대한 동의</dt>
+									<dd>“스톰프뮤직”은 이용자들이 회사의 개인정보 취급방침 또는 이용약관의 내용에 대하여 「동의」버튼 또는 「취소」버튼을 클릭할 수 있는 절차를 마련하여, 「동의」버튼을 클릭하면 개인정보 수집에 대해 동의한 것으로 봅니다.</dd>
+								</dl>
+								<dl>
+									<dt>2. 개인정보의 수집목적 및 이용목적</dt>
+									<dd>
+										<p>“개인정보”라 함은 생존하는 개인에 관한 정보로서 당해 정보에 포함되어 있는 성명, 연락처 등의 사항에 의하여 당해 개인을 식별할 수 있는 정보(당해 정보만으로는 특정 개인을 식별할 수 없더라도 다른 정보와 용이하게 결합하여 식별할 수 있는 것을 포함)를 말합니다.</p>
+										<p>대부분의 서비스는 별도의 사용자 등록이 없이 언제든지 사용할 수 있습니다. “스톰프뮤직”은 회원서비스를 통하여 이용자들에게 맞춤 식 서비스를 비롯한 보다 더 향상된 양질의 서비스를 제공하기 위하여 이용자 개인의 정보를 수집하고 있습니다.</p>
+										<p>“스톰프뮤직”은 이용자의 사전 동의 없이는 이용자의 개인 정보를 공개하지 않으며, 수집된 정보는 아래와 같이 이용하고 있습니다.</p>
+									</dd>
+								</dl>
+								<dl>
+									<dt>“스톰프뮤직”은 이용자의 사전 동의 없이는 이용자의 개인 정보를 공개하지 않으며, 수집된 정보는 아래와 같이 이용하고 있습니다.</dt>
+									<dd>
+										<p>회사는 신규 서비스개발이나 컨텐츠의 확충 시에 기존 이용자들이 회사에 제공한 개인정보를
+										바탕으로 개발해야 할 서비스의 우선 순위를 보다 더 효율적으로 정하고, 회사는 이용자들이 필요로 할 컨텐츠를 합리적으로 선택하여 제공할 수 있습니다.
+										</p>
+									</dd>
+								</dl>
+								<dl>
+									<dt>둘째, 수집하는 개인정보 항목과 수집 및 이용목적은 다음과 같습니다.</dt>
+									<dd>
+										-성명 : 회원제 서비스 이용에 따른 본인 확인 절차에 이용<br />
+										-연락처, 이메일주소 : 고지사항 전달, 불만처리 등을 위한 원활한 의사소통 경로의 확보,
+										새로운 서비스 및 신상품이나 이벤트 정보 등의 안내<br />
+										-주소, 연락처 : 청구서, 물품배송시 정확한 배송지의 확보<br />
+										-기타 선택항목 : 개인맞춤 서비스를 제공하기 위한 자료<br />
+										-IP Address, : 불량회원의 부정 이용 방지와 비인가 사용 방지
+									</dd>
+								</dl>
+								<dl>
+									<dt>3. 수집하는 개인정보 항목 및 수집방법</dt>
+									<dd>
+										“스톰프뮤직”은 이용자들이 회원서비스를 이용하기 위해 회원으로 가입하실 때 서비스 제공을 위한 필수적인 정보들을 온라인상에서 입력 받고 있습니다.<br />
+										뉴스레터 구독 신청 시에 받는 필수적인 정보는 이름, 연락처, 이메일 주소 등입니다.
+									</dd>
+								</dl>
+							</div>
+							<div class="check-wrap">
+								<input type="checkbox" id="agree_chk" name="au_own_music" value="1">
+								<label for="agree_chk" class="chk-label">개인정보수집이용에 동의합니다</label>
+							</div>
+						</div>
+						<!--정보수집약관-->
+								<div class="btn-align-center">
+									<button class="send-btn" type="submit">SEND</button>
+									<a href="#" class="btn-layerClose">CLOSE</a>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="https://www.google.com/recaptcha/api.js?render=6LeAFBAaAAAAAER36Qy8baSzNP62784Tng5bnbJJ"></script>
+		<!--newsletter modal-->
+		<script>
+			grecaptcha.ready(function() {
+			  grecaptcha.execute('6LeAFBAaAAAAAER36Qy8baSzNP62784Tng5bnbJJ', {action: 'homepage'}).then(function(token) {
+			    document.getElementById('g-recaptcha').value = token;
+			  });
+			});
+    		function fwrite_submit(f) {
+
+    			var regEmail = /([0-9a-zA-Z_-]+)@([0-9a-zA-Z_-]+)\.([0-9a-zA-Z_-]+)/;
+    			var regHanEng = /^[ㄱ-ㅎ|가-힣|a-z|A-Z|\*]+$/;
+
+    		    if (!f.nl_name.value) {
+    		        alert("이름을 입력해 주십시오.");
+    		        f.nl_name.focus();
+    		        return false;
+    			}
+    		    if (!regHanEng.test(f.nl_name.value)) {
+    				alert("이름은 한글 및 영문만 입력 가능합니다.");
+    				f.nl_name.focus();
+    		        return false;
+    			}
+    			/*
+    		    if (!f.nl_phone.value) {
+    		        alert("연락처를 입력해 주십시오.");
+    		        f.nl_phone.focus();
+    		        return false;
+    			}
+    			*/
+    		    if (!f.nl_email.value) {
+    		        alert("이메일을 입력해 주십시오.");
+    		        f.nl_email.focus();
+    		        return false;
+    			}
+    			if (!regEmail.test(f.nl_email.value)) {
+    				alert("형식에 맞지않는 이메일입니다.");
+    		        f.nl_email.focus();
+    		        return false;
+    			}
+    			if (!f.agree_chk.checked) {
+					alert("개인정보수집이용 동의에 체크해주십시오.");
+					f.agree_chk.focus();
+					return false;
+    			}
+
+    		    return true;
+    		}
+			$('.wrap').addClass('index');
+			//fullpage
+			$(document).ready(function(){
+				$('#fullpage').fullpage({
+						anchors: ['section-1st', 'section-2nd', 'section-3rd', 'section-4th', 'footer'],
+						navigation: true,
+						css3: true,
+						responsiveHeight: 680,
+						fitToSection: false,
+						navigation: true,
+						navigationPosition: 'right',
+						responsiveWidth: 1599,
+						sectionSelector: ".section",
+						css3: true,
+						onLeave: function (index, nextIndex, direction) {
+								//
+								if (nextIndex == 4 ) {
+										$("#fp-nav").addClass("white");
+								} else {
+										$("#fp-nav").removeClass("white");
+								}
+								// 각 섹션마다 효과 시 start 클래스
+								if (nextIndex == 2) {
+										$("#section-2nd").addClass("active-start");
+								}
+								if (nextIndex == 3) {
+										$("#section-3rd").addClass("active-start");
+								}
+								if (nextIndex == 4) {
+										$("#section-4th").addClass("active-start");
+								}
+								// FOOTER
+								if (nextIndex == 5) {
+										$("#fp-nav").fadeOut(300);
+								} else {
+										$("#fp-nav").fadeIn(300);
+								}
+						}
+				});
+			});
+
+		</script>
