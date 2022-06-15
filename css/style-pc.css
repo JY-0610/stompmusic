@@ -67,18 +67,20 @@ body {font-family:'Barlow Condensed', sans-serif; font-size: 17px; color: #000; 
   #header ul.menu-right .lang ul li {border-bottom: 1px solid #000;}
   #header ul.menu-right .search {position: absolute; top: 5px; padding-right: 10px;}
   .menu-br {position: absolute;width: 37px; height: 37px; background-color: #000; color: #ffffff;  border-radius: 100px; font-size: 25px; text-align: center; vertical-align: middle; top: 3px; margin-left: 10px; }
-  #header ul.menu {background-color: lavender; visibility: hidden; }
+  #header ul.menu {visibility: hidden; }
 
 /* section .content-box { background-color: aquamarine; max-width: 1280px; width: 100%; display: block;} */
 
 /* section.gnb {position: relative;width: 100%; background-color: lightcoral;} */
-#gnb {width: 100%; display: block; background-color: lightcyan;}
+#gnb {width: 100%; display: block;}
 section.gnb {max-width: 1280px; width: 100%; text-align: center;  margin:0 auto; padding: 50px 0; } 
 section.gnb > ul { display: flex; width: 100%; font-size: 22px; margin: 0 auto; }
 section.gnb ul  li  {display: block; text-align: center; }
 section.gnb ul  li a.tit {font-size: 22px; font-weight: 600; color: #333; padding: 60px;}
 section.gnb div.sub-wrap{ position: absolute; width: 100%;  height: 350px; top: 90px; left: 0; background-color: #ffffff; transition: all 0.5s; height: 0;}
+section.gnb div.sub-wrap.open{height: 360px;}
 section.gnb .sub-menu {width: 100%; max-width: 1500px; margin: 0 auto; padding: 50px 0; opacity: 0;}
+section.gnb .sub-menu.open {opacity: 1;}
 section.gnb div.sub-left { width: 20%;  float: left;}
 section.gnb div.sub-left strong {position: relative; font-size: 30px; font-weight: 700; letter-spacing: 0.02em; padding-bottom: 10px; margin-bottom: 5px; display: block; color: #000;}
 section.gnb div.sub-left p {font-size: 20px; color: #6f6f6f;}
@@ -97,7 +99,7 @@ section.gnb ul.sub-right li a {position: relative; display: block; color: #4a4a4
 .sec1 div.visual-txt p.sub-txt {position: absolute; left: 50px; top: 400px; font-size: 25px; font-weight: 300; color: #dddddd;}
 ul.btn {position: relative; left: 50px; top: 60%; margin: 80px 0;}
 ul.btn li {display: inline-block; margin-right: 10px;}
-ul.sns {position: absolute; left: 50px; top: calc(50% + 300px); width: 20%; height: 100%;}
+ul.sns {position: absolute; left: 50px; top: calc(50% + 300px); width: 20%;}
 ul.sns li {float: left; width: 50px; height: 50px; text-align: center; line-height: 46px; border-radius: 100%; margin-right: 10px; box-shadow: inset 0 0 0 1px #b9b9b9;}
 ul.sns li img {vertical-align: middle;}
 .main-txt span:nth-child(1) {animation: ani alternate 0.0s;}
@@ -123,11 +125,14 @@ ul.sns li img {vertical-align: middle;}
 ul.control {position:absolute; display: flex;  left: 190px; top: 10px;}
 ul.control li {width: 40px; height: 40px; margin-right: 20px; vertical-align:middle; border: 1px solid #b0b0b0; border-radius: 100%; color: #b0b0b0;}
 ul.control li a {display: block; vertical-align: middle; color: #b0b0b0;font-size: 25px; padding-left: 7px;}
+/* hover */
+
+ul.control li:hover {color: #be9b71; border: 1px solid #be9b71;}
+ul.control li:hover a {color: #be9b71;}
 .sec2 ul.concert-info { float: right;  position:absolute; right: 0; width: 65%;  text-align: center; text-overflow: ellipsis;}
 .sec2 ul.concert-info li { width: 240px;}
 .sec2 ul.concert-info a {display: block; position: relative;}
 .sec2 ul.concert-info li.swiper-slide {padding: 25px 0 25px 40px; transition: all 0.3s; overflow: hidden;}
-
 /* sec3 */
 .sec3 h2 { font-size: 70px; color: #000; letter-spacing: 4px; margin-bottom: 45px; text-align: center; }
 .sec3 ul.tab-menu {display: block; max-width: 700px;width: 90%;  margin: 0 auto; margin-bottom: 65px;}
@@ -178,6 +183,7 @@ ul.album-control .album-next {position: absolute; right: 10%;}
 .sec4 .sns-card {width: 100%; max-width: 1400px;  margin: 0 auto; padding: 0 20px; overflow: hidden;}
 .sec4 .sns-card ul { display: flex; width: 100%;height: 100%; padding-top: 40px;}
 .sec4 .sns-card ul li {width: 20%; height: 430px; background-color: #ffffff; padding: 28px; border-radius: 5px; margin: 20px;}
+.sec4 .sns-card ul li:hover {animation: up 4s; cursor: pointer;}
 .sec4 .sns-card ul li .tit {display: block; width: 100%;}
 .sec4 .sns-card span {display: inline-block; float: left; width: 38px; height: 38px; margin-right: 20px; line-height: 1.5; border-radius: 100%; margin-bottom: 20px;}
 .sec4 div.list-cont h4 {position: relative; width: 100%; font-size: 20px; font-weight: 400; text-overflow: ellipsis; overflow: hidden; margin-bottom: 20px;}
@@ -219,6 +225,8 @@ ul.album-control .album-next {position: absolute; right: 10%;}
 /* button */
 .btn1 {position: relative; display: inline-block;float: left; min-width: 169px; height: 44px; margin-top: 5px; letter-spacing: 0.08em; padding: 0 15px; box-sizing: border-box; font-size: 16px; vertical-align: middle; overflow: hidden; background-color: #be9b71; }
 .btn1 span {color: #000; z-index: 100; position: absolute; top: 10px; display: block; width: 84%;background:  url('../img/arr-icon-b.png') no-repeat center right; }
+.btn1::after{content: ''; position: absolute; left: 0; width: 0; height: 44px; background-color: #fff;}
+.btn1:hover::after{content: ''; position: absolute; left: 0; width: 100%; height: 44px; background-color: #fff; animation: width 0.3s;}
 
 .btn2 {position: relative; display: inline-block;float: left; min-width: 169px; height: 44px; margin-top: 5px; letter-spacing: 0.08em; padding: 0 15px; box-sizing: border-box; background-color: transparent; box-shadow: inset 0 0 0 1px rgb(255 255 255 / 50%);  font-size: 16px; vertical-align: middle; overflow: hidden; }
 .btn2 span {color: #ffffff; z-index: 100; position: absolute; top: 10px; display: block; width: 84%;background: url('../img/arr-icon-w.png') no-repeat center right; }
@@ -226,12 +234,15 @@ a.btn2::before {content: ''; position: absolute; width: 30%; height: 46px; botto
 a.btn2::after {content: ''; position: absolute; width: 60%; height: 1px; top: 0; right: 0; background: #ffffff;}
 
 .btn3 {position: relative; display: inline-block;float: left; min-width: 169px; height: 44px; margin-top: 5px; letter-spacing: 0.08em; padding: 0 15px; box-sizing: border-box; background-color: #ffffff; border: 1px solid #000; font-size: 16px; vertical-align: middle; overflow: hidden; }
-.btn3 span {color: #000; z-index: 100; position: absolute; top: 10px; display: block; width: 84%;background: url('../img/arr-icon-b.png') no-repeat center right; }
+.btn3 span {color: #000; z-index: 100; position: absolute; top: 10px; display: block; width: 84%; background: url('../img/arr-icon-b.png') no-repeat center right;}
 
-
+.btn3::after{content: ''; position: absolute; left: 0; width: 0; height: 44px; background-color: #000;}
+.btn3:hover::after{content: ''; position: absolute; left: 0; width: 100%; height: 44px; background-color: #000; animation: width 0.3s;}
+.btn3 span:hover {color: #ffffff; background: url('../img/arr-icon-w.png') no-repeat center right; }
 
 .btn4 {position: relative; display: inline-block;float: left; min-width: 169px; height: 44px; margin-top: 5px; letter-spacing: 0.08em; padding: 0 15px; box-sizing: border-box; background: #000; border: 1px solid #000; font-size: 16px; vertical-align: middle; overflow: hidden; }
 .btn4 span {color: #ffffff; z-index: 100; position: absolute; top: 10px; display: block; width: 84%;background: url('../img/arr-icon-w.png') no-repeat center right; }
+
 
 
 
@@ -257,3 +268,14 @@ a.btn2::after {content: ''; position: absolute; width: 60%; height: 1px; top: 0;
     100%{transform: translateY(0%);}
     }
     
+    @keyframes width {
+      0% {width: 0%;}
+      100%{width: 100%;}
+    }
+
+    @keyframes up  {
+      0%{transform: translateY(-60px);}
+      100%{transform: translateY(0%);}
+      }
+
+
